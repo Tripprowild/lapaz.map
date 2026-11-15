@@ -137,7 +137,7 @@
       "icono": "cathedral",
       "prioridad": 1,
       "coordenadas": [
-        -110.3128,
+        -110.31303,
         24.1617
       ],
       "zoom": 17.2,
@@ -170,11 +170,11 @@
       "icono": "kiosk",
       "prioridad": 1,
       "coordenadas": [
-        -110.3136,
-        24.1623
+        -110.31359,
+        24.16211
       ],
       "zoom": 17.4,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Jardín Velasco",
         "en": "Jardín Velasco (main plaza)"
@@ -201,11 +201,11 @@
       "icono": "library",
       "prioridad": 2,
       "coordenadas": [
-        -110.3143,
-        24.1628
+        -110.31551,
+        24.16208
       ],
       "zoom": 17.6,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Biblioteca de Historia de las Californias",
         "en": "Library of the History of the Californias"
@@ -233,11 +233,11 @@
       "icono": "museum",
       "prioridad": 1,
       "coordenadas": [
-        -110.3088,
-        24.16
+        -110.30904,
+        24.15958
       ],
       "zoom": 17,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Museo Regional de Antropología e Historia",
         "en": "Regional Museum of Anthropology and History"
@@ -265,11 +265,11 @@
       "icono": "market",
       "prioridad": 3,
       "coordenadas": [
-        -110.3155,
-        24.159
+        -110.31569,
+        24.15859
       ],
       "zoom": 17.4,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Mercado Municipal Madero",
         "en": "Madero Municipal Market"
@@ -293,11 +293,11 @@
       "icono": "theater",
       "prioridad": 2,
       "coordenadas": [
-        -110.308,
-        24.156
+        -110.31764,
+        24.14769
       ],
       "zoom": 16.5,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Teatro de la Ciudad",
         "en": "City Theater"
@@ -321,11 +321,11 @@
       "icono": "whale",
       "prioridad": 2,
       "coordenadas": [
-        -110.3115,
-        24.1662
+        -110.31843,
+        24.14752
       ],
       "zoom": 16.8,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Museo de la Ballena",
         "en": "Whale Museum"
@@ -353,11 +353,11 @@
       "icono": "kiosk",
       "prioridad": 1,
       "coordenadas": [
-        -110.3152,
-        24.1633
+        -110.31666,
+        24.16397
       ],
       "zoom": 17,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Kiosco del Malecón",
         "en": "Boardwalk Bandstand"
@@ -384,11 +384,11 @@
       "icono": "hotel",
       "prioridad": 3,
       "coordenadas": [
-        -110.3146,
-        24.1638
+        -110.31788,
+        24.1621
       ],
       "zoom": 17.6,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Hotel Perla",
         "en": "Hotel Perla"
@@ -414,11 +414,11 @@
       "icono": "palm",
       "prioridad": 1,
       "coordenadas": [
-        -110.3075,
-        24.17
+        -110.30863,
+        24.1698
       ],
       "zoom": 15,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Malecón de La Paz",
         "en": "La Paz Boardwalk"
@@ -756,11 +756,11 @@
       "icono": "manta",
       "prioridad": 2,
       "coordenadas": [
-        -110.405,
-        24.3
+        -110.35241,
+        24.30212
       ],
       "zoom": 12.5,
-      "verificar": true,
+      "verificar": false,
       "nombre": {
         "es": "Mantarrayas saltarinas",
         "en": "Leaping mobula rays"
@@ -819,8 +819,8 @@
       "prioridad": 3,
       "nivel": "basico",
       "coordenadas": [
-        -110.3132,
-        24.1608
+        -110.30977,
+        24.16385
       ],
       "zoom": 17.5,
       "nombre": {
@@ -840,7 +840,8 @@
       "fotos": [],
       "enlaces": [],
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "verificar": false
     },
     {
       "id": "ej-restaurante",
@@ -850,8 +851,8 @@
       "prioridad": 2,
       "nivel": "destacado",
       "coordenadas": [
-        -110.3118,
-        24.165
+        -110.31162,
+        24.16569
       ],
       "zoom": 17.5,
       "nombre": {
@@ -878,7 +879,8 @@
       ],
       "personajes": [],
       "fotos": [],
-      "enlaces": []
+      "enlaces": [],
+      "verificar": false
     },
     {
       "id": "ej-tour",
@@ -946,28 +948,28 @@
       "velocidad": 3.5,
       "ruta": [
         [
-          -110.3185,
-          24.1665
+          -110.32368,
+          24.16394
         ],
         [
-          -110.3205,
-          24.1735
+          -110.34057,
+          24.18116
         ],
         [
-          -110.316,
-          24.182
+          -110.31518,
+          24.17364
         ],
         [
-          -110.3195,
-          24.192
+          -110.31075,
+          24.18791
         ],
         [
-          -110.3265,
-          24.189
+          -110.32587,
+          24.19476
         ],
         [
-          -110.3225,
-          24.179
+          -110.32416,
+          24.18321
         ]
       ],
       "circular": true
@@ -977,28 +979,28 @@
       "velocidad": 5,
       "ruta": [
         [
-          -110.3105,
-          24.2185
+          -110.31955,
+          24.21785
         ],
         [
-          -110.318,
-          24.233
+          -110.32867,
+          24.23164
         ],
         [
-          -110.333,
-          24.256
+          -110.3424,
+          24.25326
         ],
         [
-          -110.342,
-          24.282
+          -110.34605,
+          24.28222
         ],
         [
-          -110.346,
-          24.306
+          -110.35144,
+          24.30982
         ],
         [
-          -110.342,
-          24.32
+          -110.34221,
+          24.33025
         ]
       ],
       "circular": false
