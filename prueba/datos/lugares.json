@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "nota": "Coordenadas en [longitud, latitud]. 'verificar': true = ubicación aproximada (corrígela con el modo ajuste: agrega ?ajustar a la dirección). 'nivel': basico (pin + descripción breve) | destacado (descripción amplia, horario, contacto, hasta 4 fotos, se sugiere 'cerca de ti') | sobresaliente (todo lo anterior + sello Recomendado, redes sociales, enlaces, botón de reservar y hasta 12 fotos). 'referencias' liga lugares entre sí por su id. 'ejemplo': true marca fichas de muestra que deben reemplazarse por negocios reales.",
   "categorias": {
     "historia": {
@@ -41,6 +41,11 @@
       "es": "Tours y actividades",
       "en": "Tours & activities",
       "color": "#2c8a6e"
+    },
+    "vida_nocturna": {
+      "es": "Vida nocturna",
+      "en": "Nightlife",
+      "color": "#6a4c9c"
     }
   },
   "personajes": [
@@ -162,7 +167,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "historia"
+      ]
     },
     {
       "id": "jardin",
@@ -193,7 +202,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "familiar"
+      ]
     },
     {
       "id": "biblioteca",
@@ -225,7 +238,8 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": []
     },
     {
       "id": "antropologia",
@@ -257,7 +271,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "familiar"
+      ]
     },
     {
       "id": "mercado",
@@ -285,7 +303,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "mariscos",
+        "mercado"
+      ]
     },
     {
       "id": "teatro",
@@ -313,7 +335,10 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "musica"
+      ]
     },
     {
       "id": "ballena",
@@ -345,7 +370,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "familiar",
+        "fauna"
+      ]
     },
     {
       "id": "kiosco",
@@ -376,7 +405,13 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "atardecer",
+        "relax",
+        "familiar"
+      ]
     },
     {
       "id": "perla",
@@ -406,7 +441,8 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": []
     },
     {
       "id": "malecon",
@@ -438,7 +474,14 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "atardecer",
+        "relax",
+        "familiar",
+        "bici"
+      ]
     },
     {
       "id": "coromuel",
@@ -469,7 +512,12 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "familiar",
+        "relax",
+        "atardecer"
+      ]
     },
     {
       "id": "caimancito",
@@ -499,7 +547,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "snorkel",
+        "familiar"
+      ]
     },
     {
       "id": "costabaja",
@@ -530,7 +582,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "lancha",
+        "vela"
+      ]
     },
     {
       "id": "pichilingue",
@@ -560,7 +616,8 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": []
     },
     {
       "id": "balandra",
@@ -591,7 +648,13 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "snorkel",
+        "kayak",
+        "familiar"
+      ]
     },
     {
       "id": "tecolote",
@@ -622,7 +685,12 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "familiar",
+        "relax",
+        "atardecer"
+      ]
     },
     {
       "id": "espiritusanto",
@@ -653,7 +721,14 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "snorkel",
+        "kayak",
+        "lancha",
+        "fauna"
+      ]
     },
     {
       "id": "mogote",
@@ -683,7 +758,12 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "fauna",
+        "aves",
+        "kayak"
+      ]
     },
     {
       "id": "tiburon",
@@ -714,7 +794,13 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "snorkel",
+        "lancha",
+        "fauna"
+      ]
     },
     {
       "id": "santacruz",
@@ -748,7 +834,10 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "historia"
+      ]
     },
     {
       "id": "mantas",
@@ -778,7 +867,11 @@
       "enlaces": [],
       "nivel": "destacado",
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "fauna",
+        "lancha"
+      ]
     },
     {
       "id": "islotes",
@@ -809,7 +902,13 @@
       "fotos": [],
       "enlaces": [],
       "contacto": {},
-      "redes": {}
+      "redes": {},
+      "etiquetas": [
+        "imperdible",
+        "snorkel",
+        "lancha",
+        "fauna"
+      ]
     },
     {
       "id": "ej-cafe",
@@ -841,7 +940,11 @@
       "enlaces": [],
       "contacto": {},
       "redes": {},
-      "verificar": false
+      "verificar": false,
+      "etiquetas": [
+        "cafe",
+        "relax"
+      ]
     },
     {
       "id": "ej-restaurante",
@@ -880,7 +983,11 @@
       "personajes": [],
       "fotos": [],
       "enlaces": [],
-      "verificar": false
+      "verificar": false,
+      "etiquetas": [
+        "mariscos",
+        "vista al mar"
+      ]
     },
     {
       "id": "ej-tour",
@@ -939,7 +1046,14 @@
         "islotes"
       ],
       "personajes": [],
-      "fotos": []
+      "fotos": [],
+      "etiquetas": [
+        "imperdible",
+        "kayak",
+        "snorkel",
+        "lancha",
+        "aventura"
+      ]
     }
   ],
   "barcos": [
@@ -1015,5 +1129,244 @@
       -110.27,
       24.35
     ]
-  }
+  },
+  "perfiles": [
+    {
+      "id": "imperdible",
+      "icono": "hongo",
+      "color": "#c0553a",
+      "nombre": {
+        "es": "Lo imperdible",
+        "en": "Must-see"
+      },
+      "lema": {
+        "es": "Primera vez en La Paz",
+        "en": "First time in La Paz"
+      },
+      "categorias": [],
+      "etiquetas": [
+        "imperdible"
+      ],
+      "rutas": [
+        "malecon"
+      ]
+    },
+    {
+      "id": "foodie",
+      "icono": "food",
+      "color": "#b8508a",
+      "nombre": {
+        "es": "Foodie",
+        "en": "Foodie"
+      },
+      "lema": {
+        "es": "Mariscos, cafés y mercados",
+        "en": "Seafood, cafés and markets"
+      },
+      "categorias": [
+        "gastronomia"
+      ],
+      "etiquetas": [
+        "mariscos",
+        "mercado",
+        "cafe"
+      ],
+      "rutas": []
+    },
+    {
+      "id": "playa",
+      "icono": "beach",
+      "color": "#2f93a3",
+      "nombre": {
+        "es": "Playa y mar",
+        "en": "Beach & sea"
+      },
+      "lema": {
+        "es": "Playas, snorkel y lancha",
+        "en": "Beaches, snorkeling, boat trips"
+      },
+      "categorias": [
+        "playas"
+      ],
+      "etiquetas": [
+        "snorkel",
+        "lancha",
+        "vela"
+      ],
+      "rutas": []
+    },
+    {
+      "id": "aventura",
+      "icono": "kayak",
+      "color": "#2c8a6e",
+      "nombre": {
+        "es": "Aventura",
+        "en": "Adventure"
+      },
+      "lema": {
+        "es": "Hiking, kayak, buceo y bici",
+        "en": "Hiking, kayak, diving, biking"
+      },
+      "categorias": [
+        "tours"
+      ],
+      "etiquetas": [
+        "aventura",
+        "kayak",
+        "hiking",
+        "buceo",
+        "bici"
+      ],
+      "rutas": [
+        "hiking"
+      ]
+    },
+    {
+      "id": "cultura",
+      "icono": "museum",
+      "color": "#7d62a8",
+      "nombre": {
+        "es": "Cultura e historia",
+        "en": "Culture & history"
+      },
+      "lema": {
+        "es": "Museos, murales y personajes",
+        "en": "Museums, murals and people"
+      },
+      "categorias": [
+        "historia",
+        "cultura"
+      ],
+      "etiquetas": [
+        "murales"
+      ],
+      "rutas": [
+        "historica",
+        "murales"
+      ]
+    },
+    {
+      "id": "noche",
+      "icono": "cocktail",
+      "color": "#6a4c9c",
+      "nombre": {
+        "es": "Noche y fiesta",
+        "en": "Night out"
+      },
+      "lema": {
+        "es": "Bares, antros y música en vivo",
+        "en": "Bars, clubs, live music"
+      },
+      "categorias": [
+        "vida_nocturna"
+      ],
+      "etiquetas": [
+        "bar",
+        "musica",
+        "nocturno"
+      ],
+      "rutas": []
+    },
+    {
+      "id": "familia",
+      "icono": "family",
+      "color": "#cf862c",
+      "nombre": {
+        "es": "En familia",
+        "en": "Family"
+      },
+      "lema": {
+        "es": "Playas tranquilas y museos",
+        "en": "Calm beaches and museums"
+      },
+      "categorias": [],
+      "etiquetas": [
+        "familiar"
+      ],
+      "rutas": [
+        "malecon"
+      ]
+    },
+    {
+      "id": "naturaleza",
+      "icono": "whaleshark",
+      "color": "#5f8f4e",
+      "nombre": {
+        "es": "Naturaleza y fauna",
+        "en": "Nature & wildlife"
+      },
+      "lema": {
+        "es": "Tiburón ballena, lobos marinos, aves",
+        "en": "Whale sharks, sea lions, birds"
+      },
+      "categorias": [
+        "naturaleza"
+      ],
+      "etiquetas": [
+        "fauna",
+        "aves"
+      ],
+      "rutas": []
+    },
+    {
+      "id": "relax",
+      "icono": "palm",
+      "color": "#d9a441",
+      "nombre": {
+        "es": "Relax",
+        "en": "Relax"
+      },
+      "lema": {
+        "es": "Cafés, spas y atardeceres",
+        "en": "Cafés, spas and sunsets"
+      },
+      "categorias": [
+        "hospedaje"
+      ],
+      "etiquetas": [
+        "relax",
+        "atardecer",
+        "spa",
+        "cafe"
+      ],
+      "rutas": []
+    }
+  ],
+  "emergencias": [
+    {
+      "telefono": "911",
+      "nombre": {
+        "es": "Emergencias",
+        "en": "Emergencies"
+      },
+      "nota": {
+        "es": "Policía, ambulancia y bomberos",
+        "en": "Police, ambulance and fire"
+      }
+    },
+    {
+      "telefono": "089",
+      "nombre": {
+        "es": "Denuncia anónima",
+        "en": "Anonymous report"
+      },
+      "nota": {
+        "es": "Reportes anónimos",
+        "en": "Anonymous tips"
+      }
+    },
+    {
+      "telefono": "078",
+      "nombre": {
+        "es": "Atención al turista",
+        "en": "Tourist assistance"
+      },
+      "nota": {
+        "es": "Ángeles Verdes · asistencia en carretera",
+        "en": "Green Angels · roadside assistance"
+      }
+    }
+  ],
+  "rutas": [],
+  "nota_perfiles": "Cada perfil enciende sus 'categorias' y los lugares que tengan alguna de sus 'etiquetas'. 'rutas' guarda los ids de las rutas que sugerirá (se agregarán en la fase de rutas). 'emergencias' es el directorio del botón Necesito…; verifica los números antes de publicar."
 }
