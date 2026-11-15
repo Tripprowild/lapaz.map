@@ -1,0 +1,23 @@
+name: Traer archivo autorizado
+# Descarga un archivo (p. ej. el logo de un negocio afiliado) y lo guarda en el repositorio.
+on:
+  workflow_dispatch:
+    inputs:
+      url: { description: 'URL del archivo', required: true }
+      destino: { description: 'Ruta en el repositorio', required: true }
+permissions:
+  contents: write
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p "$(dirname "$DEST")"
+          curl -sSfL -A "LaPazMapa/1.0" "$URL" -o "$DEST"
+          git config user.name "archivo-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"; git commit -m "Archivo: $DEST" || exit 0
+          git push
+        env:
+          URL: ${{ inputs.url }}
+          DEST: ${{ inputs.destino }}
