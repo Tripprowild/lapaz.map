@@ -1062,33 +1062,56 @@
    "prioridad": 1,
    "nivel": "sobresaliente",
    "recomendado": true,
-   "verificar": true,
+   "verificar": false,
    "coordenadas": [
-    -110.3164,
-    24.16418
+    -110.316785,
+    24.163291
    ],
    "zoom": 17,
    "nombre": {
-    "es": "La Paz Marine Tours · The Hook Experiences",
-    "en": "La Paz Marine Tours · The Hook Experiences"
-   },
-   "breve": {
-    "es": "Tours en lancha por el Mar de Cortés: Espíritu Santo, lobos marinos, tiburón ballena y Balandra.",
-    "en": "Boat tours on the Sea of Cortez: Espíritu Santo, sea lions, whale sharks and Balandra."
+    "es": "The Hook Experiences · La Paz Marine Tours",
+    "en": "The Hook Experiences · La Paz Marine Tours"
    },
    "descripcion": {
     "es": "Tours privados y compartidos a Isla Espíritu Santo, safaris marinos, tiburón ballena, viajes privados a Balandra y pesca deportiva y con mosca, en grupos pequeños con guía bilingüe biólogo marino. Cuando el viento cierra el puerto, caminata al Mirador Balandra. En su tienda: distribuidores de Cressi y diseños de artistas locales; también rentan GoPro.",
     "en": "Private and shared tours to Isla Espíritu Santo, sea safaris, whale sharks, private trips to Balandra, and sport and fly fishing, in small groups with a bilingual marine-biologist guide. When wind closes the port, a hike to Mirador Balandra. Their shop: Cressi dealers and designs by local artists; GoPro rentals too."
    },
-   "direccion": "Malecón (Paseo Álvaro Obregón) cerca de 16 de Septiembre, junto al Kiosco y a Cornelio Cantina",
+   "direccion": "Paseo Álvaro Obregón (malecón), junto al Kiosco · La Paz, BCS 23000",
    "horario": {
     "es": "Tours privados: cita 9:30, salida 10:00 · Compartidos: cita 10:30, salida 11:00",
     "en": "Private tours: meet 9:30, depart 10:00 · Shared: meet 10:30, depart 11:00"
    },
-   "contacto": {},
-   "redes": {},
+   "contacto": {
+    "telefono": "+52 612 243 6462",
+    "whatsapp": "+52 612 243 6462",
+    "email": "thehookexperiences@gmail.com",
+    "web": "https://lapazwhalesharks.com/"
+   },
+   "redes": {
+    "facebook": "https://www.facebook.com/lapazwhalesharks",
+    "instagram": "https://www.instagram.com/thehookexperiences",
+    "tiktok": "https://www.tiktok.com/@thehookexperiences",
+    "youtube": "https://www.youtube.com/@TheHookExperiences",
+    "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g150771-d25454071-Reviews-The_Hook_Experiences-La_Paz_Baja_California.html"
+   },
    "enlaces": [],
-   "fotos": [],
+   "fotos": [
+    {
+     "url": "assets/fotos/thehook-1.jpg",
+     "alt": "Tiburón ballena",
+     "credito": "© The Hook Experiences"
+    },
+    {
+     "url": "assets/fotos/thehook-2.jpg",
+     "alt": "Isla Espíritu Santo",
+     "credito": "© The Hook Experiences"
+    },
+    {
+     "url": "assets/fotos/thehook-3.jpg",
+     "alt": "Grand Slam",
+     "credito": "© The Hook Experiences"
+    }
+   ],
    "personajes": [],
    "referencias": [
     "espiritusanto",
@@ -1104,7 +1127,19 @@
     "playa",
     "pesca",
     "compras"
-   ]
+   ],
+   "logo": "assets/logos/thehook.webp",
+   "reservar": {
+    "url": "https://fareharbor.com/embeds/book/thehooklapaz/items/?flow=1395321",
+    "texto": {
+     "es": "Reservar tour",
+     "en": "Book a tour"
+    }
+   },
+   "descripcion_breve": {
+    "es": "Tours en lancha por el Mar de Cortés: Espíritu Santo, lobos marinos, tiburón ballena y Balandra.",
+    "en": "Boat tours on the Sea of Cortez: Espíritu Santo, sea lions, whale sharks and Balandra."
+   }
   }
  ],
  "barcos": [

@@ -209,7 +209,8 @@ function init(root) {
   function buildMarkers() {
     PLACES.forEach(p => {
       const el = document.createElement('div'); el.className = 'mlp-mk lv-' + p.nivel + (p.verificar ? ' is-approx' : ''); el.style.setProperty('--c', `var(--${p.categoria})`);
-      el.innerHTML = `<div class="mlp-pv"></div><div class="mlp-dot">${icon(p.icono)}</div>${p.nivel === 'sobresaliente' ? '<b class="mlp-star" aria-hidden="true">★</b>' : ''}`;
+      if (p.logo) el.classList.add('has-logo');
+      el.innerHTML = `<div class="mlp-pv"></div><div class="mlp-dot">${mark(p)}</div>${p.nivel === 'sobresaliente' ? '<b class="mlp-star" aria-hidden="true">★</b>' : ''}`;
       el.setAttribute('role', 'button'); el.setAttribute('tabindex', '0');
       el.addEventListener('click', e => {
         e.stopPropagation(); if (el._dragged) { el._dragged = false; return; }
@@ -225,6 +226,7 @@ function init(root) {
       }
     });
   }
+  function mark(p) { return p && p.logo ? `<img class="mlp-logo" src="${esc(p.logo)}" alt="" loading="lazy">` : icon(p.icono); }
   function fillPreview(p) {
     const pv = p.el.querySelector('.mlp-pv'), t = v => v == null ? '' : (typeof v === 'object' ? (v[lang] || v.es || '') : String(v));
     if (pv._lang === lang) return; pv._lang = lang;
@@ -283,7 +285,7 @@ function init(root) {
     const hero = rank >= 1 && p.fotos && p.fotos[0] && p.fotos[0].url ? ` has-photo" style="background-image:url('${esc(p.fotos[0].url)}')` : '';
     card.style.setProperty('--c', `var(--${p.categoria})`);
     card.classList.remove('lv-basico', 'lv-destacado', 'lv-sobresaliente'); card.classList.add('lv-' + lv);
-    card.innerHTML = `<div class="mlp-hero${hero}"><button class="mlp-x" aria-label="×">×</button><div class="mlp-disc">${icon(p.icono)}</div>${rank === 2 ? `<span class="mlp-recbadge">★ ${L.rec}</span>` : ''}</div>
+    card.innerHTML = `<div class="mlp-hero${hero}"><button class="mlp-x" aria-label="×">×</button><div class="mlp-disc${p.logo ? ' has-logo' : ''}">${mark(p)}</div>${rank === 2 ? `<span class="mlp-recbadge">★ ${L.rec}</span>` : ''}</div>
       <div class="mlp-body"><span class="mlp-tag">${p.num} · ${esc(t(cat))}</span>${p.ejemplo ? ` <span class="mlp-tag mlp-ex">${L.example}</span>` : ''}<h2>${esc(t(p.nombre))}</h2>
       ${p.direccion ? `<div class="mlp-addr">📍 ${esc(t(p.direccion))}</div>` : ''}${hours}
       <p>${esc(desc)}</p>
@@ -556,7 +558,7 @@ function init(root) {
         <b class="mlp-ctitle">${esc(c.titulo[lang])}</b><span class="mlp-cbiz">${esc(biz ? biz.nombre[lang] : (c.negocio_nombre || ''))}</span>
         ${compact ? '' : `<p class="mlp-cterms">${esc(c.condiciones ? c.condiciones[lang] : '')}</p>`}</div>
       <div class="mlp-cstub"><small>${L.until}</small><b>${esc(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }))}</b>${mine ? `<code>${esc(mine.codigo)}</code>` : '<i>✂</i>'}</div>
-      <span class="mlp-cstamp">LA PAZ · BCS</span></div>`;
+      ${biz && biz.logo ? `<img class="mlp-clogo" src="${esc(biz.logo)}" alt="">` : '<span class="mlp-cstamp">LA PAZ · BCS</span>'}</div>`;
   }
   function downloadCoupon(c) {
     const L = UI[lang], all = store.get(COUP_KEY) || {};
@@ -572,6 +574,8 @@ function init(root) {
     return fetch(u, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(obj) }).then(() => true).catch(() => false);
   }
   function drawCouponPNG(c, code) {
+    const lb = byId[c.negocio];
+    if (lb && lb.logo && c._logo === undefined) { const im = new Image(); im.onload = () => { c._logo = im; drawCouponPNG(c, code); }; im.onerror = () => { c._logo = null; drawCouponPNG(c, code); }; im.src = lb.logo; return; }
     const W = 1200, H = 560, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const g = cv.getContext('2d');
     const col = c.color || '#c0553a', biz = byId[c.negocio], L = UI[lang];
     g.fillStyle = '#f4e7c9'; g.fillRect(0, 0, W, H);
@@ -588,8 +592,9 @@ function init(root) {
     g.fillStyle = '#3b3632'; g.font = '700 34px Nunito, sans-serif'; g.fillText(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }), 895, 175);
     g.fillStyle = '#5b5048'; g.font = '700 22px Nunito, sans-serif'; g.fillText(L.yourCode.toUpperCase(), 895, 270);
     g.fillStyle = col; g.font = '800 33px ui-monospace, Menlo, monospace'; g.fillText(code, 892, 318);
-    g.save(); g.translate(1010, 440); g.rotate(-.18); g.strokeStyle = col; g.globalAlpha = .7; g.lineWidth = 4; g.beginPath(); g.arc(0, 0, 70, 0, 7); g.stroke(); g.beginPath(); g.arc(0, 0, 58, 0, 7); g.stroke();
-    g.fillStyle = col; g.font = '800 22px Nunito, sans-serif'; g.textAlign = 'center'; g.fillText('LA PAZ', 0, -4); g.font = '700 16px Nunito, sans-serif'; g.font = '700 13px Nunito, sans-serif'; g.fillText('BAJA CALIFORNIA SUR', 0, 20); g.restore();
+    if (c._logo) { const im = c._logo, s2 = Math.min(190 / im.naturalWidth, 170 / im.naturalHeight); g.drawImage(im, 1010 - im.naturalWidth * s2 / 2, 445 - im.naturalHeight * s2 / 2, im.naturalWidth * s2, im.naturalHeight * s2); }
+    else { g.save(); g.translate(1010, 440); g.rotate(-.18); g.strokeStyle = col; g.globalAlpha = .7; g.lineWidth = 4; g.beginPath(); g.arc(0, 0, 70, 0, 7); g.stroke(); g.beginPath(); g.arc(0, 0, 58, 0, 7); g.stroke();
+    g.fillStyle = col; g.font = '800 22px Nunito, sans-serif'; g.textAlign = 'center'; g.fillText('LA PAZ', 0, -4); g.font = '700 16px Nunito, sans-serif'; g.font = '700 13px Nunito, sans-serif'; g.fillText('BAJA CALIFORNIA SUR', 0, 20); g.restore(); }
     g.fillStyle = '#7d7266'; g.font = '18px Nunito, sans-serif'; g.fillText(location.host + location.pathname.replace(/index\.html$/, ''), 80, H - 62);
     cv.toBlob(b => { if (!b) return; const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `cupon-${c.id}-${code}.png`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); }, 'image/png');
     function wrap(g, txt, x, y, mw, lh, max) { const w = String(txt || '').split(' '); let line = '', n = 0; for (const t of w) { const test = line ? line + ' ' + t : t; if (g.measureText(test).width > mw && line) { g.fillText(line, x, y); y += lh; line = t; if (++n >= max - 1) { } } else line = test; } if (line) g.fillText(line, x, y); }
@@ -612,7 +617,7 @@ function init(root) {
     const now = new Date(), ss = sunset(now, LAPAZ[0], LAPAZ[1]);
     const evs = upcoming(), coups = (DATA.cupones || []).filter(couponValid);
     const aff = (DATA.afiliados || []).map(id => byId[id]).filter(Boolean).slice(0, 6);
-    const slots = aff.map(p => `<button class="mlp-aff" data-id="${esc(p.id)}" style="--c:var(--${p.categoria})"><span class="mlp-ic">${icon(p.icono)}</span><b>${esc(p.nombre[lang])}</b><small>★ ${L.rec}</small></button>`);
+    const slots = aff.map(p => `<button class="mlp-aff" data-id="${esc(p.id)}" style="--c:var(--${p.categoria})"><span class="mlp-ic${p.logo ? ' has-logo' : ''}">${mark(p)}</span><b>${esc(p.nombre[lang])}</b><small>★ ${L.rec}</small></button>`);
     while (slots.length < 6) slots.push(`<a class="mlp-aff mlp-affempty" href="${esc((DATA.config && DATA.config.afiliadosUrl) || 'afiliados.html')}"><span class="mlp-ic">+</span><b>${L.yourBiz}</b><small>${L.yourBizSub}</small></a>`);
     $('.mlp-lb').innerHTML = `<div class="mlp-today">
       <div class="mlp-tnow"><div><b class="mlp-tbig">${WX ? Math.round(WX.temp) + '°' : '--°'}</b><span>${WX ? WXICON(WX.simbolo) : ''}</span></div>
