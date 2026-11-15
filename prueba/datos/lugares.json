@@ -1,1463 +1,1532 @@
 {
-  "version": 4,
-  "nota": "Coordenadas en [longitud, latitud]. 'verificar': true = ubicación aproximada (corrígela con el modo ajuste: agrega ?ajustar a la dirección). 'nivel': basico (pin + descripción breve) | destacado (descripción amplia, horario, contacto, hasta 4 fotos, se sugiere 'cerca de ti') | sobresaliente (todo lo anterior + sello Recomendado, redes sociales, enlaces, botón de reservar y hasta 12 fotos). 'referencias' liga lugares entre sí por su id. 'ejemplo': true marca fichas de muestra que deben reemplazarse por negocios reales.",
-  "categorias": {
-    "historia": {
-      "es": "Historia",
-      "en": "History",
-      "color": "#c0553a"
-    },
-    "cultura": {
-      "es": "Cultura",
-      "en": "Culture",
-      "color": "#7d62a8"
-    },
-    "turismo": {
-      "es": "Turismo",
-      "en": "Tourism",
-      "color": "#cf862c"
-    },
-    "playas": {
-      "es": "Playas",
-      "en": "Beaches",
-      "color": "#2f93a3"
-    },
-    "naturaleza": {
-      "es": "Naturaleza",
-      "en": "Nature",
-      "color": "#5f8f4e"
-    },
-    "gastronomia": {
-      "es": "Gastronomía",
-      "en": "Food & drink",
-      "color": "#b8508a"
-    },
-    "hospedaje": {
-      "es": "Hospedaje",
-      "en": "Lodging",
-      "color": "#4d6fa8"
-    },
-    "tours": {
-      "es": "Tours y actividades",
-      "en": "Tours & activities",
-      "color": "#2c8a6e"
-    },
-    "vida_nocturna": {
-      "es": "Vida nocturna",
-      "en": "Nightlife",
-      "color": "#6a4c9c"
-    }
+ "version": 4,
+ "nota": "Coordenadas en [longitud, latitud]. 'verificar': true = ubicación aproximada (corrígela con el modo ajuste: agrega ?ajustar a la dirección). 'nivel': basico (pin + descripción breve) | destacado (descripción amplia, horario, contacto, hasta 4 fotos, se sugiere 'cerca de ti') | sobresaliente (todo lo anterior + sello Recomendado, redes sociales, enlaces, botón de reservar y hasta 12 fotos). 'referencias' liga lugares entre sí por su id. 'ejemplo': true marca fichas de muestra que deben reemplazarse por negocios reales.",
+ "categorias": {
+  "historia": {
+   "es": "Historia",
+   "en": "History",
+   "color": "#c0553a"
   },
-  "personajes": [
-    {
-      "id": "pericues",
-      "iniciales": "GP",
-      "lugar": "antropologia",
-      "nombre": {
-        "es": "Guaycuras y pericúes",
-        "en": "Guaycura and Pericú peoples"
-      },
-      "epoca": {
-        "es": "Pueblos originarios",
-        "en": "Indigenous peoples"
-      },
-      "descripcion": {
-        "es": "Habitaban la región de la bahía miles de años antes de la llegada europea; vivían de la pesca, la recolección y la caza.",
-        "en": "They lived around the bay for thousands of years before Europeans arrived, relying on fishing, gathering and hunting."
-      }
-    },
-    {
-      "id": "cortes",
-      "iniciales": "HC",
-      "lugar": "santacruz",
-      "nombre": {
-        "es": "Hernán Cortés",
-        "en": "Hernán Cortés"
-      },
-      "epoca": {
-        "es": "1485–1547",
-        "en": "1485–1547"
-      },
-      "descripcion": {
-        "es": "El 3 de mayo de 1535 desembarcó en la bahía y la llamó Bahía de la Santa Cruz. La colonia fracasó por la falta de víveres.",
-        "en": "On 3 May 1535 he landed in the bay and named it Bahía de la Santa Cruz. The colony failed for lack of supplies."
-      }
-    },
-    {
-      "id": "vizcaino",
-      "iniciales": "SV",
-      "lugar": "santacruz",
-      "nombre": {
-        "es": "Sebastián Vizcaíno",
-        "en": "Sebastián Vizcaíno"
-      },
-      "epoca": {
-        "es": "Navegante · 1596",
-        "en": "Navigator · 1596"
-      },
-      "descripcion": {
-        "es": "En 1596 intentó otro asentamiento y le dio al lugar el nombre de La Paz.",
-        "en": "In 1596 he attempted another settlement and gave the place the name La Paz."
-      }
-    },
-    {
-      "id": "bravo",
-      "iniciales": "JB",
-      "lugar": "catedral",
-      "nombre": {
-        "es": "Jaime Bravo y Juan de Ugarte",
-        "en": "Jaime Bravo & Juan de Ugarte"
-      },
-      "epoca": {
-        "es": "Misioneros jesuitas · 1720",
-        "en": "Jesuit missionaries · 1720"
-      },
-      "descripcion": {
-        "es": "Fundaron en 1720 la Misión de Nuestra Señora del Pilar de La Paz, en el sitio donde hoy está la catedral.",
-        "en": "In 1720 they founded the Mission of Nuestra Señora del Pilar de La Paz, where the cathedral stands today."
-      }
-    },
-    {
-      "id": "olachea",
-      "iniciales": "AO",
-      "lugar": "biblioteca",
-      "nombre": {
-        "es": "Agustín Olachea Avilés",
-        "en": "Agustín Olachea Avilés"
-      },
-      "epoca": {
-        "es": "Gobernador del Territorio Sur",
-        "en": "Governor of the Southern Territory"
-      },
-      "descripcion": {
-        "es": "Como gobernador del Territorio Sur de la Baja California despachaba en el antiguo Palacio de Gobierno, frente al Jardín Velasco.",
-        "en": "As governor of the Southern Territory of Baja California he worked in the old Government Palace facing Jardín Velasco."
-      }
+  "cultura": {
+   "es": "Cultura",
+   "en": "Culture",
+   "color": "#7d62a8"
+  },
+  "turismo": {
+   "es": "Turismo",
+   "en": "Tourism",
+   "color": "#cf862c"
+  },
+  "playas": {
+   "es": "Playas",
+   "en": "Beaches",
+   "color": "#2f93a3"
+  },
+  "naturaleza": {
+   "es": "Naturaleza",
+   "en": "Nature",
+   "color": "#5f8f4e"
+  },
+  "gastronomia": {
+   "es": "Gastronomía",
+   "en": "Food & drink",
+   "color": "#b8508a"
+  },
+  "hospedaje": {
+   "es": "Hospedaje",
+   "en": "Lodging",
+   "color": "#4d6fa8"
+  },
+  "tours": {
+   "es": "Tours y actividades",
+   "en": "Tours & activities",
+   "color": "#2c8a6e"
+  },
+  "vida_nocturna": {
+   "es": "Vida nocturna",
+   "en": "Nightlife",
+   "color": "#6a4c9c"
+  }
+ },
+ "personajes": [
+  {
+   "id": "pericues",
+   "iniciales": "GP",
+   "lugar": "antropologia",
+   "nombre": {
+    "es": "Guaycuras y pericúes",
+    "en": "Guaycura and Pericú peoples"
+   },
+   "epoca": {
+    "es": "Pueblos originarios",
+    "en": "Indigenous peoples"
+   },
+   "descripcion": {
+    "es": "Habitaban la región de la bahía miles de años antes de la llegada europea; vivían de la pesca, la recolección y la caza.",
+    "en": "They lived around the bay for thousands of years before Europeans arrived, relying on fishing, gathering and hunting."
+   }
+  },
+  {
+   "id": "cortes",
+   "iniciales": "HC",
+   "lugar": "santacruz",
+   "nombre": {
+    "es": "Hernán Cortés",
+    "en": "Hernán Cortés"
+   },
+   "epoca": {
+    "es": "1485–1547",
+    "en": "1485–1547"
+   },
+   "descripcion": {
+    "es": "El 3 de mayo de 1535 desembarcó en la bahía y la llamó Bahía de la Santa Cruz. La colonia fracasó por la falta de víveres.",
+    "en": "On 3 May 1535 he landed in the bay and named it Bahía de la Santa Cruz. The colony failed for lack of supplies."
+   }
+  },
+  {
+   "id": "vizcaino",
+   "iniciales": "SV",
+   "lugar": "santacruz",
+   "nombre": {
+    "es": "Sebastián Vizcaíno",
+    "en": "Sebastián Vizcaíno"
+   },
+   "epoca": {
+    "es": "Navegante · 1596",
+    "en": "Navigator · 1596"
+   },
+   "descripcion": {
+    "es": "En 1596 intentó otro asentamiento y le dio al lugar el nombre de La Paz.",
+    "en": "In 1596 he attempted another settlement and gave the place the name La Paz."
+   }
+  },
+  {
+   "id": "bravo",
+   "iniciales": "JB",
+   "lugar": "catedral",
+   "nombre": {
+    "es": "Jaime Bravo y Juan de Ugarte",
+    "en": "Jaime Bravo & Juan de Ugarte"
+   },
+   "epoca": {
+    "es": "Misioneros jesuitas · 1720",
+    "en": "Jesuit missionaries · 1720"
+   },
+   "descripcion": {
+    "es": "Fundaron en 1720 la Misión de Nuestra Señora del Pilar de La Paz, en el sitio donde hoy está la catedral.",
+    "en": "In 1720 they founded the Mission of Nuestra Señora del Pilar de La Paz, where the cathedral stands today."
+   }
+  },
+  {
+   "id": "olachea",
+   "iniciales": "AO",
+   "lugar": "biblioteca",
+   "nombre": {
+    "es": "Agustín Olachea Avilés",
+    "en": "Agustín Olachea Avilés"
+   },
+   "epoca": {
+    "es": "Gobernador del Territorio Sur",
+    "en": "Governor of the Southern Territory"
+   },
+   "descripcion": {
+    "es": "Como gobernador del Territorio Sur de la Baja California despachaba en el antiguo Palacio de Gobierno, frente al Jardín Velasco.",
+    "en": "As governor of the Southern Territory of Baja California he worked in the old Government Palace facing Jardín Velasco."
+   }
+  }
+ ],
+ "lugares": [
+  {
+   "id": "catedral",
+   "categoria": "historia",
+   "icono": "cathedral",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.31303,
+    24.1617
+   ],
+   "zoom": 17.2,
+   "verificar": false,
+   "nombre": {
+    "es": "Catedral de Nuestra Señora de La Paz",
+    "en": "Cathedral of Our Lady of La Paz"
+   },
+   "descripcion": {
+    "es": "Su construcción comenzó en 1861 sobre el sitio de la antigua misión jesuita de 1720. Está en la esquina de Revolución de 1910 y 5 de Mayo.",
+    "en": "Construction began in 1861 on the site of the 1720 Jesuit mission. It stands at the corner of Revolución de 1910 and 5 de Mayo."
+   },
+   "direccion": "Revolución de 1910 esq. 5 de Mayo, Centro",
+   "personajes": [
+    "bravo"
+   ],
+   "referencias": [
+    "jardin",
+    "biblioteca"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "historia"
+   ]
+  },
+  {
+   "id": "jardin",
+   "categoria": "historia",
+   "icono": "kiosk",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.31359,
+    24.16211
+   ],
+   "zoom": 17.4,
+   "verificar": false,
+   "nombre": {
+    "es": "Jardín Velasco",
+    "en": "Jardín Velasco (main plaza)"
+   },
+   "descripcion": {
+    "es": "La plaza principal de La Paz, con kiosco, bancas y la fuente del Hongo de Balandra, rodeada de edificios antiguos.",
+    "en": "La Paz’s main plaza, with a bandstand, benches and the Balandra Mushroom fountain, surrounded by old buildings."
+   },
+   "direccion": "Madero, Revolución, Independencia y 5 de Mayo, Centro",
+   "personajes": [],
+   "referencias": [
+    "catedral",
+    "biblioteca"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "familiar"
+   ]
+  },
+  {
+   "id": "biblioteca",
+   "categoria": "historia",
+   "icono": "library",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.31551,
+    24.16208
+   ],
+   "zoom": 17.6,
+   "verificar": false,
+   "nombre": {
+    "es": "Biblioteca de Historia de las Californias",
+    "en": "Library of the History of the Californias"
+   },
+   "descripcion": {
+    "es": "Ocupa la antigua Casa de Gobierno, frente al Jardín Velasco. Guarda documentos y libros sobre la historia de la península.",
+    "en": "Housed in the former Government House facing Jardín Velasco, with documents and books on the peninsula’s history."
+   },
+   "direccion": "Madero, frente al Jardín Velasco",
+   "personajes": [
+    "olachea"
+   ],
+   "referencias": [
+    "jardin"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": []
+  },
+  {
+   "id": "antropologia",
+   "categoria": "cultura",
+   "icono": "museum",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.30904,
+    24.15958
+   ],
+   "zoom": 17,
+   "verificar": false,
+   "nombre": {
+    "es": "Museo Regional de Antropología e Historia",
+    "en": "Regional Museum of Anthropology and History"
+   },
+   "descripcion": {
+    "es": "Recorre la historia de la península desde la prehistoria y las pinturas rupestres hasta la Revolución de 1910.",
+    "en": "Traces the peninsula’s story from prehistory and rock art to the 1910 Revolution."
+   },
+   "direccion": "Ignacio Altamirano esq. 5 de Mayo, Centro",
+   "personajes": [
+    "pericues"
+   ],
+   "referencias": [
+    "santacruz"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "familiar"
+   ]
+  },
+  {
+   "id": "mercado",
+   "categoria": "cultura",
+   "icono": "market",
+   "prioridad": 3,
+   "coordenadas": [
+    -110.31569,
+    24.15859
+   ],
+   "zoom": 17.4,
+   "verificar": false,
+   "nombre": {
+    "es": "Mercado Municipal Madero",
+    "en": "Madero Municipal Market"
+   },
+   "descripcion": {
+    "es": "Comida local, mariscos, frutas y antojitos sudcalifornianos.",
+    "en": "Local food, seafood, fruit and southern Baja snacks."
+   },
+   "direccion": "Revolución de 1910 y Degollado",
+   "personajes": [],
+   "referencias": [],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "mariscos",
+    "mercado"
+   ]
+  },
+  {
+   "id": "teatro",
+   "categoria": "cultura",
+   "icono": "theater",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.31764,
+    24.14769
+   ],
+   "zoom": 16.5,
+   "verificar": false,
+   "nombre": {
+    "es": "Teatro de la Ciudad",
+    "en": "City Theater"
+   },
+   "descripcion": {
+    "es": "Forma parte de la Unidad Cultural Jesús Castro Agúndez: conciertos, danza, teatro y festivales.",
+    "en": "Part of the Jesús Castro Agúndez Cultural Unit: concerts, dance, theater and festivals."
+   },
+   "direccion": "Antonio Navarro, entre Altamirano y Héroes de Independencia",
+   "personajes": [],
+   "referencias": [],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "musica"
+   ]
+  },
+  {
+   "id": "ballena",
+   "categoria": "cultura",
+   "icono": "whale",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.31843,
+    24.14752
+   ],
+   "zoom": 16.8,
+   "verificar": false,
+   "nombre": {
+    "es": "Museo de la Ballena",
+    "en": "Whale Museum"
+   },
+   "descripcion": {
+    "es": "Junto al malecón: esqueletos de ballenas y exhibiciones sobre la vida marina del Golfo de California.",
+    "en": "By the boardwalk: whale skeletons and exhibits on the marine life of the Gulf of California."
+   },
+   "direccion": "Paseo Álvaro Obregón (Malecón)",
+   "personajes": [],
+   "referencias": [
+    "malecon",
+    "mantas",
+    "tiburon"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "familiar",
+    "fauna"
+   ]
+  },
+  {
+   "id": "kiosco",
+   "categoria": "turismo",
+   "icono": "kiosk",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.31666,
+    24.16397
+   ],
+   "zoom": 17,
+   "verificar": false,
+   "nombre": {
+    "es": "Kiosco del Malecón",
+    "en": "Boardwalk Bandstand"
+   },
+   "descripcion": {
+    "es": "Punto de encuentro clásico frente a la bahía, sobre el Paseo Álvaro Obregón. Ideal para ver el atardecer.",
+    "en": "A classic meeting point on Paseo Álvaro Obregón, facing the bay. Perfect for sunsets."
+   },
+   "direccion": "Paseo Álvaro Obregón, Zona Central",
+   "personajes": [],
+   "referencias": [
+    "malecon",
+    "perla"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "atardecer",
+    "relax",
+    "familiar"
+   ]
+  },
+  {
+   "id": "perla",
+   "categoria": "historia",
+   "icono": "hotel",
+   "prioridad": 3,
+   "coordenadas": [
+    -110.31788,
+    24.1621
+   ],
+   "zoom": 17.6,
+   "verificar": false,
+   "nombre": {
+    "es": "Hotel Perla",
+    "en": "Hotel Perla"
+   },
+   "descripcion": {
+    "es": "Uno de los hoteles tradicionales del malecón, testigo del crecimiento turístico de la ciudad.",
+    "en": "One of the boardwalk’s traditional hotels, witness to the city’s tourism growth."
+   },
+   "direccion": "Paseo Álvaro Obregón",
+   "personajes": [],
+   "referencias": [
+    "kiosco"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": []
+  },
+  {
+   "id": "malecon",
+   "categoria": "turismo",
+   "icono": "palm",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.30863,
+    24.1698
+   ],
+   "zoom": 15,
+   "verificar": false,
+   "nombre": {
+    "es": "Malecón de La Paz",
+    "en": "La Paz Boardwalk"
+   },
+   "descripcion": {
+    "es": "Unos 5 km de paseo frente al mar, con palmeras, esculturas y algunas de las mejores puestas de sol de México.",
+    "en": "About 5 km of seafront promenade with palms, sculptures and some of Mexico’s best sunsets."
+   },
+   "direccion": "Paseo Álvaro Obregón",
+   "personajes": [],
+   "referencias": [
+    "kiosco",
+    "ballena",
+    "coromuel"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "atardecer",
+    "relax",
+    "familiar",
+    "bici"
+   ]
+  },
+  {
+   "id": "coromuel",
+   "categoria": "playas",
+   "icono": "beach",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.3002,
+    24.1964
+   ],
+   "zoom": 16,
+   "verificar": false,
+   "nombre": {
+    "es": "Playa El Coromuel",
+    "en": "El Coromuel Beach"
+   },
+   "descripcion": {
+    "es": "La primera playa al seguir el malecón fuera del centro. Su nombre viene del viento “coromuel” de las tardes.",
+    "en": "The first beach as you follow the boardwalk out of downtown. Its name comes from the afternoon “coromuel” wind."
+   },
+   "direccion": "Carretera a Pichilingue",
+   "personajes": [],
+   "referencias": [
+    "malecon",
+    "caimancito"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "familiar",
+    "relax",
+    "atardecer"
+   ]
+  },
+  {
+   "id": "caimancito",
+   "categoria": "playas",
+   "icono": "beach",
+   "prioridad": 3,
+   "coordenadas": [
+    -110.3,
+    24.2055
+   ],
+   "zoom": 16,
+   "verificar": false,
+   "nombre": {
+    "es": "Playa El Caimancito",
+    "en": "El Caimancito Beach"
+   },
+   "descripcion": {
+    "es": "Pequeña playa con buen snorkel cerca de la orilla.",
+    "en": "Small beach with good snorkeling close to shore."
+   },
+   "direccion": "Carretera a Pichilingue",
+   "personajes": [],
+   "referencias": [
+    "coromuel"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "snorkel",
+    "familiar"
+   ]
+  },
+  {
+   "id": "costabaja",
+   "categoria": "turismo",
+   "icono": "marina",
+   "prioridad": 3,
+   "coordenadas": [
+    -110.304,
+    24.2178
+   ],
+   "zoom": 15.5,
+   "verificar": false,
+   "nombre": {
+    "es": "Marina Costa Baja",
+    "en": "Costa Baja Marina"
+   },
+   "descripcion": {
+    "es": "Marina con yates, veleros y catamaranes; salida de paseos por la bahía.",
+    "en": "Marina with yachts, sailboats and catamarans; departure point for bay tours."
+   },
+   "direccion": "Carretera a Pichilingue",
+   "personajes": [],
+   "referencias": [
+    "espiritusanto",
+    "balandra"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "lancha",
+    "vela"
+   ]
+  },
+  {
+   "id": "pichilingue",
+   "categoria": "turismo",
+   "icono": "ferry",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.3274,
+    24.2758
+   ],
+   "zoom": 14.5,
+   "verificar": false,
+   "nombre": {
+    "es": "Puerto de Pichilingue",
+    "en": "Pichilingue Ferry Port"
+   },
+   "descripcion": {
+    "es": "Terminal de ferris que conectan La Paz con Mazatlán y Topolobampo.",
+    "en": "Ferry terminal connecting La Paz with Mazatlán and Topolobampo."
+   },
+   "direccion": "Pichilingue",
+   "personajes": [],
+   "referencias": [
+    "balandra"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": []
+  },
+  {
+   "id": "balandra",
+   "categoria": "playas",
+   "icono": "hongo",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.3242,
+    24.3217
+   ],
+   "zoom": 14.6,
+   "verificar": false,
+   "nombre": {
+    "es": "Playa Balandra y El Hongo",
+    "en": "Balandra Beach & the Mushroom Rock"
+   },
+   "descripcion": {
+    "es": "Aguas turquesa poco profundas y la famosa roca en forma de hongo, símbolo de La Paz. Área natural protegida con cupo diario.",
+    "en": "Shallow turquoise water and the famous mushroom-shaped rock, a symbol of La Paz. Protected area with a daily visitor limit."
+   },
+   "direccion": "Carretera a Balandra",
+   "personajes": [],
+   "referencias": [
+    "tecolote",
+    "espiritusanto"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "snorkel",
+    "kayak",
+    "familiar"
+   ]
+  },
+  {
+   "id": "tecolote",
+   "categoria": "playas",
+   "icono": "beach",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.317,
+    24.333
+   ],
+   "zoom": 14.6,
+   "verificar": false,
+   "nombre": {
+    "es": "Playa El Tecolote",
+    "en": "El Tecolote Beach"
+   },
+   "descripcion": {
+    "es": "Playa amplia con restaurantes y vista a Isla Espíritu Santo.",
+    "en": "Wide beach with restaurants and views of Espíritu Santo Island."
+   },
+   "direccion": "Carretera a El Tecolote",
+   "personajes": [],
+   "referencias": [
+    "balandra",
+    "espiritusanto"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "familiar",
+    "relax",
+    "atardecer"
+   ]
+  },
+  {
+   "id": "espiritusanto",
+   "categoria": "naturaleza",
+   "icono": "island",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.3325,
+    24.4714
+   ],
+   "zoom": 11.2,
+   "verificar": false,
+   "nombre": {
+    "es": "Isla Espíritu Santo",
+    "en": "Espíritu Santo Island"
+   },
+   "descripcion": {
+    "es": "Parte de las Islas y Áreas Protegidas del Golfo de California, Patrimonio de la Humanidad. Kayak, snorkel y lobos marinos.",
+    "en": "Part of the Islands and Protected Areas of the Gulf of California World Heritage Site. Kayaking, snorkeling and sea lions."
+   },
+   "direccion": "",
+   "personajes": [],
+   "referencias": [
+    "tecolote",
+    "costabaja"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "snorkel",
+    "kayak",
+    "lancha",
+    "fauna"
+   ]
+  },
+  {
+   "id": "mogote",
+   "categoria": "naturaleza",
+   "icono": "dunes",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.37,
+    24.176
+   ],
+   "zoom": 13.5,
+   "verificar": true,
+   "nombre": {
+    "es": "El Mogote",
+    "en": "El Mogote"
+   },
+   "descripcion": {
+    "es": "Barra de arena con dunas y manglares que protege la Ensenada de La Paz.",
+    "en": "Sandbar with dunes and mangroves that shelters La Paz Lagoon."
+   },
+   "direccion": "",
+   "personajes": [],
+   "referencias": [
+    "tiburon"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "fauna",
+    "aves",
+    "kayak"
+   ]
+  },
+  {
+   "id": "tiburon",
+   "categoria": "naturaleza",
+   "icono": "whaleshark",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.385,
+    24.205
+   ],
+   "zoom": 13,
+   "verificar": true,
+   "nombre": {
+    "es": "Zona del tiburón ballena",
+    "en": "Whale shark area"
+   },
+   "descripcion": {
+    "es": "En temporada (aprox. de octubre a abril) se puede nadar con el pez más grande del mundo, siempre con operadores autorizados.",
+    "en": "In season (roughly October to April) you can swim with the world’s largest fish, always with licensed operators."
+   },
+   "direccion": "",
+   "personajes": [],
+   "referencias": [
+    "mogote",
+    "ballena"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "snorkel",
+    "lancha",
+    "fauna"
+   ]
+  },
+  {
+   "id": "santacruz",
+   "categoria": "historia",
+   "icono": "caravel",
+   "prioridad": 1,
+   "coordenadas": [
+    -110.355,
+    24.238
+   ],
+   "zoom": 12.5,
+   "verificar": true,
+   "nombre": {
+    "es": "Bahía de la Santa Cruz (1535)",
+    "en": "Bay of Santa Cruz (1535)"
+   },
+   "descripcion": {
+    "es": "Aquí comenzó la historia escrita de La Paz: Cortés nombró la bahía en 1535 y Vizcaíno le dio su nombre actual en 1596.",
+    "en": "La Paz’s written history began here: Cortés named the bay in 1535 and Vizcaíno gave it its current name in 1596."
+   },
+   "direccion": "",
+   "personajes": [
+    "cortes",
+    "vizcaino"
+   ],
+   "referencias": [
+    "antropologia",
+    "catedral"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "historia"
+   ]
+  },
+  {
+   "id": "mantas",
+   "categoria": "naturaleza",
+   "icono": "manta",
+   "prioridad": 2,
+   "coordenadas": [
+    -110.35241,
+    24.30212
+   ],
+   "zoom": 12.5,
+   "verificar": false,
+   "nombre": {
+    "es": "Mantarrayas saltarinas",
+    "en": "Leaping mobula rays"
+   },
+   "descripcion": {
+    "es": "En el Golfo de California es común ver mantarrayas (móbulas) saltar fuera del agua, a veces en grandes grupos.",
+    "en": "In the Gulf of California mobula rays are often seen leaping out of the water, sometimes in large groups."
+   },
+   "direccion": "",
+   "personajes": [],
+   "referencias": [
+    "ballena"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "nivel": "destacado",
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "fauna",
+    "lancha"
+   ]
+  },
+  {
+   "id": "islotes",
+   "categoria": "naturaleza",
+   "icono": "sealion",
+   "prioridad": 2,
+   "nivel": "destacado",
+   "coordenadas": [
+    -110.4044,
+    24.5994
+   ],
+   "zoom": 12.5,
+   "verificar": false,
+   "nombre": {
+    "es": "Los Islotes (lobos marinos)",
+    "en": "Los Islotes (sea lions)"
+   },
+   "descripcion": {
+    "es": "Islotes al norte de Isla Partida con una colonia de lobos marinos de California; nadar con ellos es uno de los paseos más populares desde La Paz.",
+    "en": "Islets north of Isla Partida with a California sea lion colony; swimming with them is one of the most popular trips from La Paz."
+   },
+   "direccion": "Archipiélago Espíritu Santo",
+   "personajes": [],
+   "referencias": [
+    "espiritusanto",
+    "costabaja"
+   ],
+   "fotos": [],
+   "enlaces": [],
+   "contacto": {},
+   "redes": {},
+   "etiquetas": [
+    "imperdible",
+    "snorkel",
+    "lancha",
+    "fauna"
+   ]
+  },
+  {
+   "id": "ej-cafe",
+   "ejemplo": true,
+   "categoria": "gastronomia",
+   "icono": "cup",
+   "prioridad": 3,
+   "nivel": "basico",
+   "coordenadas": [
+    -110.30977,
+    24.16385
+   ],
+   "zoom": 17.5,
+   "nombre": {
+    "es": "Café de ejemplo (nivel Básico)",
+    "en": "Sample café (Basic level)"
+   },
+   "descripcion_breve": {
+    "es": "Ficha de muestra: un pin y una descripción breve.",
+    "en": "Sample listing: a pin and a short description."
+   },
+   "descripcion": {
+    "es": "Ficha de muestra: un pin y una descripción breve.",
+    "en": "Sample listing: a pin and a short description."
+   },
+   "referencias": [],
+   "personajes": [],
+   "fotos": [],
+   "enlaces": [],
+   "contacto": {},
+   "redes": {},
+   "verificar": false,
+   "etiquetas": [
+    "cafe",
+    "relax"
+   ]
+  },
+  {
+   "id": "ej-restaurante",
+   "ejemplo": true,
+   "categoria": "gastronomia",
+   "icono": "food",
+   "prioridad": 2,
+   "nivel": "destacado",
+   "coordenadas": [
+    -110.31162,
+    24.16569
+   ],
+   "zoom": 17.5,
+   "nombre": {
+    "es": "Restaurante de ejemplo (nivel Destacado)",
+    "en": "Sample restaurant (Featured level)"
+   },
+   "descripcion": {
+    "es": "Ficha de muestra del nivel Destacado: descripción amplia, horario, datos de contacto y hasta 4 fotos. Se sugiere al turista cuando está cerca.",
+    "en": "Sample Featured listing: longer description, hours, contact details and up to 4 photos. Suggested to tourists when they are nearby."
+   },
+   "direccion": "Paseo Álvaro Obregón (ejemplo)",
+   "horario": {
+    "es": "Lun a dom · 13:00–23:00 (ejemplo)",
+    "en": "Mon–Sun · 1–11 pm (sample)"
+   },
+   "contacto": {
+    "telefono": "+52 612 000 0000",
+    "whatsapp": "+52 612 000 0000",
+    "web": "https://example.com"
+   },
+   "redes": {},
+   "referencias": [
+    "malecon"
+   ],
+   "personajes": [],
+   "fotos": [],
+   "enlaces": [],
+   "verificar": false,
+   "etiquetas": [
+    "mariscos",
+    "vista al mar"
+   ]
+  },
+  {
+   "id": "ej-tour",
+   "ejemplo": true,
+   "categoria": "tours",
+   "icono": "kayak",
+   "prioridad": 2,
+   "nivel": "sobresaliente",
+   "coordenadas": [
+    -110.3082,
+    24.1688
+   ],
+   "zoom": 17,
+   "nombre": {
+    "es": "Tour de ejemplo a Espíritu Santo (nivel Sobresaliente)",
+    "en": "Sample Espíritu Santo tour (Outstanding level)"
+   },
+   "descripcion": {
+    "es": "Ficha de muestra del nivel Sobresaliente: sello de Recomendado, redes sociales, enlaces, botón de reservar y galería de fotos.",
+    "en": "Sample Outstanding listing: Recommended badge, social media, links, booking button and photo gallery."
+   },
+   "direccion": "Malecón (ejemplo)",
+   "horario": {
+    "es": "Salidas diarias 8:00 (ejemplo)",
+    "en": "Daily departures 8 am (sample)"
+   },
+   "contacto": {
+    "telefono": "+52 612 000 0000",
+    "whatsapp": "+52 612 000 0000",
+    "email": "reservas@example.com",
+    "web": "https://example.com"
+   },
+   "redes": {
+    "facebook": "https://example.com",
+    "instagram": "https://example.com",
+    "tiktok": "https://example.com"
+   },
+   "reservar": {
+    "url": "https://example.com",
+    "texto": {
+     "es": "Reservar tour",
+     "en": "Book tour"
     }
-  ],
-  "lugares": [
+   },
+   "enlaces": [
     {
-      "id": "catedral",
-      "categoria": "historia",
-      "icono": "cathedral",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.31303,
-        24.1617
-      ],
-      "zoom": 17.2,
-      "verificar": false,
-      "nombre": {
-        "es": "Catedral de Nuestra Señora de La Paz",
-        "en": "Cathedral of Our Lady of La Paz"
-      },
-      "descripcion": {
-        "es": "Su construcción comenzó en 1861 sobre el sitio de la antigua misión jesuita de 1720. Está en la esquina de Revolución de 1910 y 5 de Mayo.",
-        "en": "Construction began in 1861 on the site of the 1720 Jesuit mission. It stands at the corner of Revolución de 1910 and 5 de Mayo."
-      },
-      "direccion": "Revolución de 1910 esq. 5 de Mayo, Centro",
-      "personajes": [
-        "bravo"
-      ],
-      "referencias": [
-        "jardin",
-        "biblioteca"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "historia"
-      ]
-    },
-    {
-      "id": "jardin",
-      "categoria": "historia",
-      "icono": "kiosk",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.31359,
-        24.16211
-      ],
-      "zoom": 17.4,
-      "verificar": false,
-      "nombre": {
-        "es": "Jardín Velasco",
-        "en": "Jardín Velasco (main plaza)"
-      },
-      "descripcion": {
-        "es": "La plaza principal de La Paz, con kiosco, bancas y la fuente del Hongo de Balandra, rodeada de edificios antiguos.",
-        "en": "La Paz’s main plaza, with a bandstand, benches and the Balandra Mushroom fountain, surrounded by old buildings."
-      },
-      "direccion": "Madero, Revolución, Independencia y 5 de Mayo, Centro",
-      "personajes": [],
-      "referencias": [
-        "catedral",
-        "biblioteca"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "familiar"
-      ]
-    },
-    {
-      "id": "biblioteca",
-      "categoria": "historia",
-      "icono": "library",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.31551,
-        24.16208
-      ],
-      "zoom": 17.6,
-      "verificar": false,
-      "nombre": {
-        "es": "Biblioteca de Historia de las Californias",
-        "en": "Library of the History of the Californias"
-      },
-      "descripcion": {
-        "es": "Ocupa la antigua Casa de Gobierno, frente al Jardín Velasco. Guarda documentos y libros sobre la historia de la península.",
-        "en": "Housed in the former Government House facing Jardín Velasco, with documents and books on the peninsula’s history."
-      },
-      "direccion": "Madero, frente al Jardín Velasco",
-      "personajes": [
-        "olachea"
-      ],
-      "referencias": [
-        "jardin"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": []
-    },
-    {
-      "id": "antropologia",
-      "categoria": "cultura",
-      "icono": "museum",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.30904,
-        24.15958
-      ],
-      "zoom": 17,
-      "verificar": false,
-      "nombre": {
-        "es": "Museo Regional de Antropología e Historia",
-        "en": "Regional Museum of Anthropology and History"
-      },
-      "descripcion": {
-        "es": "Recorre la historia de la península desde la prehistoria y las pinturas rupestres hasta la Revolución de 1910.",
-        "en": "Traces the peninsula’s story from prehistory and rock art to the 1910 Revolution."
-      },
-      "direccion": "Ignacio Altamirano esq. 5 de Mayo, Centro",
-      "personajes": [
-        "pericues"
-      ],
-      "referencias": [
-        "santacruz"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "familiar"
-      ]
-    },
-    {
-      "id": "mercado",
-      "categoria": "cultura",
-      "icono": "market",
-      "prioridad": 3,
-      "coordenadas": [
-        -110.31569,
-        24.15859
-      ],
-      "zoom": 17.4,
-      "verificar": false,
-      "nombre": {
-        "es": "Mercado Municipal Madero",
-        "en": "Madero Municipal Market"
-      },
-      "descripcion": {
-        "es": "Comida local, mariscos, frutas y antojitos sudcalifornianos.",
-        "en": "Local food, seafood, fruit and southern Baja snacks."
-      },
-      "direccion": "Revolución de 1910 y Degollado",
-      "personajes": [],
-      "referencias": [],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "mariscos",
-        "mercado"
-      ]
-    },
-    {
-      "id": "teatro",
-      "categoria": "cultura",
-      "icono": "theater",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.31764,
-        24.14769
-      ],
-      "zoom": 16.5,
-      "verificar": false,
-      "nombre": {
-        "es": "Teatro de la Ciudad",
-        "en": "City Theater"
-      },
-      "descripcion": {
-        "es": "Forma parte de la Unidad Cultural Jesús Castro Agúndez: conciertos, danza, teatro y festivales.",
-        "en": "Part of the Jesús Castro Agúndez Cultural Unit: concerts, dance, theater and festivals."
-      },
-      "direccion": "Antonio Navarro, entre Altamirano y Héroes de Independencia",
-      "personajes": [],
-      "referencias": [],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "musica"
-      ]
-    },
-    {
-      "id": "ballena",
-      "categoria": "cultura",
-      "icono": "whale",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.31843,
-        24.14752
-      ],
-      "zoom": 16.8,
-      "verificar": false,
-      "nombre": {
-        "es": "Museo de la Ballena",
-        "en": "Whale Museum"
-      },
-      "descripcion": {
-        "es": "Junto al malecón: esqueletos de ballenas y exhibiciones sobre la vida marina del Golfo de California.",
-        "en": "By the boardwalk: whale skeletons and exhibits on the marine life of the Gulf of California."
-      },
-      "direccion": "Paseo Álvaro Obregón (Malecón)",
-      "personajes": [],
-      "referencias": [
-        "malecon",
-        "mantas",
-        "tiburon"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "familiar",
-        "fauna"
-      ]
-    },
-    {
-      "id": "kiosco",
-      "categoria": "turismo",
-      "icono": "kiosk",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.31666,
-        24.16397
-      ],
-      "zoom": 17,
-      "verificar": false,
-      "nombre": {
-        "es": "Kiosco del Malecón",
-        "en": "Boardwalk Bandstand"
-      },
-      "descripcion": {
-        "es": "Punto de encuentro clásico frente a la bahía, sobre el Paseo Álvaro Obregón. Ideal para ver el atardecer.",
-        "en": "A classic meeting point on Paseo Álvaro Obregón, facing the bay. Perfect for sunsets."
-      },
-      "direccion": "Paseo Álvaro Obregón, Zona Central",
-      "personajes": [],
-      "referencias": [
-        "malecon",
-        "perla"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "atardecer",
-        "relax",
-        "familiar"
-      ]
-    },
-    {
-      "id": "perla",
-      "categoria": "historia",
-      "icono": "hotel",
-      "prioridad": 3,
-      "coordenadas": [
-        -110.31788,
-        24.1621
-      ],
-      "zoom": 17.6,
-      "verificar": false,
-      "nombre": {
-        "es": "Hotel Perla",
-        "en": "Hotel Perla"
-      },
-      "descripcion": {
-        "es": "Uno de los hoteles tradicionales del malecón, testigo del crecimiento turístico de la ciudad.",
-        "en": "One of the boardwalk’s traditional hotels, witness to the city’s tourism growth."
-      },
-      "direccion": "Paseo Álvaro Obregón",
-      "personajes": [],
-      "referencias": [
-        "kiosco"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": []
-    },
-    {
-      "id": "malecon",
-      "categoria": "turismo",
-      "icono": "palm",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.30863,
-        24.1698
-      ],
-      "zoom": 15,
-      "verificar": false,
-      "nombre": {
-        "es": "Malecón de La Paz",
-        "en": "La Paz Boardwalk"
-      },
-      "descripcion": {
-        "es": "Unos 5 km de paseo frente al mar, con palmeras, esculturas y algunas de las mejores puestas de sol de México.",
-        "en": "About 5 km of seafront promenade with palms, sculptures and some of Mexico’s best sunsets."
-      },
-      "direccion": "Paseo Álvaro Obregón",
-      "personajes": [],
-      "referencias": [
-        "kiosco",
-        "ballena",
-        "coromuel"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "atardecer",
-        "relax",
-        "familiar",
-        "bici"
-      ]
-    },
-    {
-      "id": "coromuel",
-      "categoria": "playas",
-      "icono": "beach",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.3002,
-        24.1964
-      ],
-      "zoom": 16,
-      "verificar": false,
-      "nombre": {
-        "es": "Playa El Coromuel",
-        "en": "El Coromuel Beach"
-      },
-      "descripcion": {
-        "es": "La primera playa al seguir el malecón fuera del centro. Su nombre viene del viento “coromuel” de las tardes.",
-        "en": "The first beach as you follow the boardwalk out of downtown. Its name comes from the afternoon “coromuel” wind."
-      },
-      "direccion": "Carretera a Pichilingue",
-      "personajes": [],
-      "referencias": [
-        "malecon",
-        "caimancito"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "familiar",
-        "relax",
-        "atardecer"
-      ]
-    },
-    {
-      "id": "caimancito",
-      "categoria": "playas",
-      "icono": "beach",
-      "prioridad": 3,
-      "coordenadas": [
-        -110.3,
-        24.2055
-      ],
-      "zoom": 16,
-      "verificar": false,
-      "nombre": {
-        "es": "Playa El Caimancito",
-        "en": "El Caimancito Beach"
-      },
-      "descripcion": {
-        "es": "Pequeña playa con buen snorkel cerca de la orilla.",
-        "en": "Small beach with good snorkeling close to shore."
-      },
-      "direccion": "Carretera a Pichilingue",
-      "personajes": [],
-      "referencias": [
-        "coromuel"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "snorkel",
-        "familiar"
-      ]
-    },
-    {
-      "id": "costabaja",
-      "categoria": "turismo",
-      "icono": "marina",
-      "prioridad": 3,
-      "coordenadas": [
-        -110.304,
-        24.2178
-      ],
-      "zoom": 15.5,
-      "verificar": false,
-      "nombre": {
-        "es": "Marina Costa Baja",
-        "en": "Costa Baja Marina"
-      },
-      "descripcion": {
-        "es": "Marina con yates, veleros y catamaranes; salida de paseos por la bahía.",
-        "en": "Marina with yachts, sailboats and catamarans; departure point for bay tours."
-      },
-      "direccion": "Carretera a Pichilingue",
-      "personajes": [],
-      "referencias": [
-        "espiritusanto",
-        "balandra"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "lancha",
-        "vela"
-      ]
-    },
-    {
-      "id": "pichilingue",
-      "categoria": "turismo",
-      "icono": "ferry",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.3274,
-        24.2758
-      ],
-      "zoom": 14.5,
-      "verificar": false,
-      "nombre": {
-        "es": "Puerto de Pichilingue",
-        "en": "Pichilingue Ferry Port"
-      },
-      "descripcion": {
-        "es": "Terminal de ferris que conectan La Paz con Mazatlán y Topolobampo.",
-        "en": "Ferry terminal connecting La Paz with Mazatlán and Topolobampo."
-      },
-      "direccion": "Pichilingue",
-      "personajes": [],
-      "referencias": [
-        "balandra"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": []
-    },
-    {
-      "id": "balandra",
-      "categoria": "playas",
-      "icono": "hongo",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.3242,
-        24.3217
-      ],
-      "zoom": 14.6,
-      "verificar": false,
-      "nombre": {
-        "es": "Playa Balandra y El Hongo",
-        "en": "Balandra Beach & the Mushroom Rock"
-      },
-      "descripcion": {
-        "es": "Aguas turquesa poco profundas y la famosa roca en forma de hongo, símbolo de La Paz. Área natural protegida con cupo diario.",
-        "en": "Shallow turquoise water and the famous mushroom-shaped rock, a symbol of La Paz. Protected area with a daily visitor limit."
-      },
-      "direccion": "Carretera a Balandra",
-      "personajes": [],
-      "referencias": [
-        "tecolote",
-        "espiritusanto"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "snorkel",
-        "kayak",
-        "familiar"
-      ]
-    },
-    {
-      "id": "tecolote",
-      "categoria": "playas",
-      "icono": "beach",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.317,
-        24.333
-      ],
-      "zoom": 14.6,
-      "verificar": false,
-      "nombre": {
-        "es": "Playa El Tecolote",
-        "en": "El Tecolote Beach"
-      },
-      "descripcion": {
-        "es": "Playa amplia con restaurantes y vista a Isla Espíritu Santo.",
-        "en": "Wide beach with restaurants and views of Espíritu Santo Island."
-      },
-      "direccion": "Carretera a El Tecolote",
-      "personajes": [],
-      "referencias": [
-        "balandra",
-        "espiritusanto"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "familiar",
-        "relax",
-        "atardecer"
-      ]
-    },
-    {
-      "id": "espiritusanto",
-      "categoria": "naturaleza",
-      "icono": "island",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.3325,
-        24.4714
-      ],
-      "zoom": 11.2,
-      "verificar": false,
-      "nombre": {
-        "es": "Isla Espíritu Santo",
-        "en": "Espíritu Santo Island"
-      },
-      "descripcion": {
-        "es": "Parte de las Islas y Áreas Protegidas del Golfo de California, Patrimonio de la Humanidad. Kayak, snorkel y lobos marinos.",
-        "en": "Part of the Islands and Protected Areas of the Gulf of California World Heritage Site. Kayaking, snorkeling and sea lions."
-      },
-      "direccion": "",
-      "personajes": [],
-      "referencias": [
-        "tecolote",
-        "costabaja"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "snorkel",
-        "kayak",
-        "lancha",
-        "fauna"
-      ]
-    },
-    {
-      "id": "mogote",
-      "categoria": "naturaleza",
-      "icono": "dunes",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.37,
-        24.176
-      ],
-      "zoom": 13.5,
-      "verificar": true,
-      "nombre": {
-        "es": "El Mogote",
-        "en": "El Mogote"
-      },
-      "descripcion": {
-        "es": "Barra de arena con dunas y manglares que protege la Ensenada de La Paz.",
-        "en": "Sandbar with dunes and mangroves that shelters La Paz Lagoon."
-      },
-      "direccion": "",
-      "personajes": [],
-      "referencias": [
-        "tiburon"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "fauna",
-        "aves",
-        "kayak"
-      ]
-    },
-    {
-      "id": "tiburon",
-      "categoria": "naturaleza",
-      "icono": "whaleshark",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.385,
-        24.205
-      ],
-      "zoom": 13,
-      "verificar": true,
-      "nombre": {
-        "es": "Zona del tiburón ballena",
-        "en": "Whale shark area"
-      },
-      "descripcion": {
-        "es": "En temporada (aprox. de octubre a abril) se puede nadar con el pez más grande del mundo, siempre con operadores autorizados.",
-        "en": "In season (roughly October to April) you can swim with the world’s largest fish, always with licensed operators."
-      },
-      "direccion": "",
-      "personajes": [],
-      "referencias": [
-        "mogote",
-        "ballena"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "snorkel",
-        "lancha",
-        "fauna"
-      ]
-    },
-    {
-      "id": "santacruz",
-      "categoria": "historia",
-      "icono": "caravel",
-      "prioridad": 1,
-      "coordenadas": [
-        -110.355,
-        24.238
-      ],
-      "zoom": 12.5,
-      "verificar": true,
-      "nombre": {
-        "es": "Bahía de la Santa Cruz (1535)",
-        "en": "Bay of Santa Cruz (1535)"
-      },
-      "descripcion": {
-        "es": "Aquí comenzó la historia escrita de La Paz: Cortés nombró la bahía en 1535 y Vizcaíno le dio su nombre actual en 1596.",
-        "en": "La Paz’s written history began here: Cortés named the bay in 1535 and Vizcaíno gave it its current name in 1596."
-      },
-      "direccion": "",
-      "personajes": [
-        "cortes",
-        "vizcaino"
-      ],
-      "referencias": [
-        "antropologia",
-        "catedral"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "historia"
-      ]
-    },
-    {
-      "id": "mantas",
-      "categoria": "naturaleza",
-      "icono": "manta",
-      "prioridad": 2,
-      "coordenadas": [
-        -110.35241,
-        24.30212
-      ],
-      "zoom": 12.5,
-      "verificar": false,
-      "nombre": {
-        "es": "Mantarrayas saltarinas",
-        "en": "Leaping mobula rays"
-      },
-      "descripcion": {
-        "es": "En el Golfo de California es común ver mantarrayas (móbulas) saltar fuera del agua, a veces en grandes grupos.",
-        "en": "In the Gulf of California mobula rays are often seen leaping out of the water, sometimes in large groups."
-      },
-      "direccion": "",
-      "personajes": [],
-      "referencias": [
-        "ballena"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "nivel": "destacado",
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "fauna",
-        "lancha"
-      ]
-    },
-    {
-      "id": "islotes",
-      "categoria": "naturaleza",
-      "icono": "sealion",
-      "prioridad": 2,
-      "nivel": "destacado",
-      "coordenadas": [
-        -110.4044,
-        24.5994
-      ],
-      "zoom": 12.5,
-      "verificar": false,
-      "nombre": {
-        "es": "Los Islotes (lobos marinos)",
-        "en": "Los Islotes (sea lions)"
-      },
-      "descripcion": {
-        "es": "Islotes al norte de Isla Partida con una colonia de lobos marinos de California; nadar con ellos es uno de los paseos más populares desde La Paz.",
-        "en": "Islets north of Isla Partida with a California sea lion colony; swimming with them is one of the most popular trips from La Paz."
-      },
-      "direccion": "Archipiélago Espíritu Santo",
-      "personajes": [],
-      "referencias": [
-        "espiritusanto",
-        "costabaja"
-      ],
-      "fotos": [],
-      "enlaces": [],
-      "contacto": {},
-      "redes": {},
-      "etiquetas": [
-        "imperdible",
-        "snorkel",
-        "lancha",
-        "fauna"
-      ]
-    },
-    {
-      "id": "ej-cafe",
-      "ejemplo": true,
-      "categoria": "gastronomia",
-      "icono": "cup",
-      "prioridad": 3,
-      "nivel": "basico",
-      "coordenadas": [
-        -110.30977,
-        24.16385
-      ],
-      "zoom": 17.5,
-      "nombre": {
-        "es": "Café de ejemplo (nivel Básico)",
-        "en": "Sample café (Basic level)"
-      },
-      "descripcion_breve": {
-        "es": "Ficha de muestra: un pin y una descripción breve.",
-        "en": "Sample listing: a pin and a short description."
-      },
-      "descripcion": {
-        "es": "Ficha de muestra: un pin y una descripción breve.",
-        "en": "Sample listing: a pin and a short description."
-      },
-      "referencias": [],
-      "personajes": [],
-      "fotos": [],
-      "enlaces": [],
-      "contacto": {},
-      "redes": {},
-      "verificar": false,
-      "etiquetas": [
-        "cafe",
-        "relax"
-      ]
-    },
-    {
-      "id": "ej-restaurante",
-      "ejemplo": true,
-      "categoria": "gastronomia",
-      "icono": "food",
-      "prioridad": 2,
-      "nivel": "destacado",
-      "coordenadas": [
-        -110.31162,
-        24.16569
-      ],
-      "zoom": 17.5,
-      "nombre": {
-        "es": "Restaurante de ejemplo (nivel Destacado)",
-        "en": "Sample restaurant (Featured level)"
-      },
-      "descripcion": {
-        "es": "Ficha de muestra del nivel Destacado: descripción amplia, horario, datos de contacto y hasta 4 fotos. Se sugiere al turista cuando está cerca.",
-        "en": "Sample Featured listing: longer description, hours, contact details and up to 4 photos. Suggested to tourists when they are nearby."
-      },
-      "direccion": "Paseo Álvaro Obregón (ejemplo)",
-      "horario": {
-        "es": "Lun a dom · 13:00–23:00 (ejemplo)",
-        "en": "Mon–Sun · 1–11 pm (sample)"
-      },
-      "contacto": {
-        "telefono": "+52 612 000 0000",
-        "whatsapp": "+52 612 000 0000",
-        "web": "https://example.com"
-      },
-      "redes": {},
-      "referencias": [
-        "malecon"
-      ],
-      "personajes": [],
-      "fotos": [],
-      "enlaces": [],
-      "verificar": false,
-      "etiquetas": [
-        "mariscos",
-        "vista al mar"
-      ]
-    },
-    {
-      "id": "ej-tour",
-      "ejemplo": true,
-      "categoria": "tours",
-      "icono": "kayak",
-      "prioridad": 2,
-      "nivel": "sobresaliente",
-      "coordenadas": [
-        -110.3082,
-        24.1688
-      ],
-      "zoom": 17,
-      "nombre": {
-        "es": "Tour de ejemplo a Espíritu Santo (nivel Sobresaliente)",
-        "en": "Sample Espíritu Santo tour (Outstanding level)"
-      },
-      "descripcion": {
-        "es": "Ficha de muestra del nivel Sobresaliente: sello de Recomendado, redes sociales, enlaces, botón de reservar y galería de fotos.",
-        "en": "Sample Outstanding listing: Recommended badge, social media, links, booking button and photo gallery."
-      },
-      "direccion": "Malecón (ejemplo)",
-      "horario": {
-        "es": "Salidas diarias 8:00 (ejemplo)",
-        "en": "Daily departures 8 am (sample)"
-      },
-      "contacto": {
-        "telefono": "+52 612 000 0000",
-        "whatsapp": "+52 612 000 0000",
-        "email": "reservas@example.com",
-        "web": "https://example.com"
-      },
-      "redes": {
-        "facebook": "https://example.com",
-        "instagram": "https://example.com",
-        "tiktok": "https://example.com"
-      },
-      "reservar": {
-        "url": "https://example.com",
-        "texto": {
-          "es": "Reservar tour",
-          "en": "Book tour"
-        }
-      },
-      "enlaces": [
-        {
-          "titulo": {
-            "es": "Itinerario",
-            "en": "Itinerary"
-          },
-          "url": "https://example.com"
-        }
-      ],
-      "referencias": [
-        "espiritusanto",
-        "islotes"
-      ],
-      "personajes": [],
-      "fotos": [],
-      "etiquetas": [
-        "imperdible",
-        "kayak",
-        "snorkel",
-        "lancha",
-        "aventura"
-      ]
+     "titulo": {
+      "es": "Itinerario",
+      "en": "Itinerary"
+     },
+     "url": "https://example.com"
     }
-  ],
-  "barcos": [
-    {
-      "tipo": "velero",
-      "velocidad": 3.5,
-      "ruta": [
-        [
-          -110.32368,
-          24.16394
-        ],
-        [
-          -110.34057,
-          24.18116
-        ],
-        [
-          -110.31518,
-          24.17364
-        ],
-        [
-          -110.31075,
-          24.18791
-        ],
-        [
-          -110.32587,
-          24.19476
-        ],
-        [
-          -110.32416,
-          24.18321
-        ]
-      ],
-      "circular": true
-    },
-    {
-      "tipo": "cata",
-      "velocidad": 5,
-      "ruta": [
-        [
-          -110.31955,
-          24.21785
-        ],
-        [
-          -110.32867,
-          24.23164
-        ],
-        [
-          -110.3424,
-          24.25326
-        ],
-        [
-          -110.34605,
-          24.28222
-        ],
-        [
-          -110.35144,
-          24.30982
-        ],
-        [
-          -110.34221,
-          24.33025
-        ]
-      ],
-      "circular": false
-    }
-  ],
-  "vista_inicial": {
-    "sw": [
-      -110.4,
-      24.12
+   ],
+   "referencias": [
+    "espiritusanto",
+    "islotes"
+   ],
+   "personajes": [],
+   "fotos": [],
+   "etiquetas": [
+    "imperdible",
+    "kayak",
+    "snorkel",
+    "lancha",
+    "aventura"
+   ]
+  },
+  {
+   "id": "thehook",
+   "categoria": "tours",
+   "icono": "kayak",
+   "prioridad": 1,
+   "nivel": "sobresaliente",
+   "recomendado": true,
+   "verificar": true,
+   "coordenadas": [
+    -110.3164,
+    24.16418
+   ],
+   "zoom": 17,
+   "nombre": {
+    "es": "La Paz Marine Tours · The Hook Experiences",
+    "en": "La Paz Marine Tours · The Hook Experiences"
+   },
+   "breve": {
+    "es": "Tours en lancha por el Mar de Cortés: Espíritu Santo, lobos marinos, tiburón ballena y Balandra.",
+    "en": "Boat tours on the Sea of Cortez: Espíritu Santo, sea lions, whale sharks and Balandra."
+   },
+   "descripcion": {
+    "es": "Tours privados y compartidos a Isla Espíritu Santo, safaris marinos, tiburón ballena, viajes privados a Balandra y pesca deportiva y con mosca, en grupos pequeños con guía bilingüe biólogo marino. Cuando el viento cierra el puerto, caminata al Mirador Balandra. En su tienda: distribuidores de Cressi y diseños de artistas locales; también rentan GoPro.",
+    "en": "Private and shared tours to Isla Espíritu Santo, sea safaris, whale sharks, private trips to Balandra, and sport and fly fishing, in small groups with a bilingual marine-biologist guide. When wind closes the port, a hike to Mirador Balandra. Their shop: Cressi dealers and designs by local artists; GoPro rentals too."
+   },
+   "direccion": "Malecón (Paseo Álvaro Obregón) cerca de 16 de Septiembre, junto al Kiosco y a Cornelio Cantina",
+   "horario": {
+    "es": "Tours privados: cita 9:30, salida 10:00 · Compartidos: cita 10:30, salida 11:00",
+    "en": "Private tours: meet 9:30, depart 10:00 · Shared: meet 10:30, depart 11:00"
+   },
+   "contacto": {},
+   "redes": {},
+   "enlaces": [],
+   "fotos": [],
+   "personajes": [],
+   "referencias": [
+    "espiritusanto",
+    "kiosco",
+    "malecon"
+   ],
+   "etiquetas": [
+    "imperdible",
+    "snorkel",
+    "lancha",
+    "aventura",
+    "fauna",
+    "playa",
+    "pesca",
+    "compras"
+   ]
+  }
+ ],
+ "barcos": [
+  {
+   "tipo": "velero",
+   "velocidad": 3.5,
+   "ruta": [
+    [
+     -110.32368,
+     24.16394
     ],
-    "ne": [
-      -110.27,
-      24.35
+    [
+     -110.34057,
+     24.18116
+    ],
+    [
+     -110.31518,
+     24.17364
+    ],
+    [
+     -110.31075,
+     24.18791
+    ],
+    [
+     -110.32587,
+     24.19476
+    ],
+    [
+     -110.32416,
+     24.18321
     ]
+   ],
+   "circular": true
   },
-  "perfiles": [
-    {
-      "id": "imperdible",
-      "icono": "hongo",
-      "color": "#c0553a",
-      "nombre": {
-        "es": "Lo imperdible",
-        "en": "Must-see"
-      },
-      "lema": {
-        "es": "Primera vez en La Paz",
-        "en": "First time in La Paz"
-      },
-      "categorias": [],
-      "etiquetas": [
-        "imperdible"
-      ],
-      "rutas": [
-        "malecon"
-      ]
-    },
-    {
-      "id": "foodie",
-      "icono": "food",
-      "color": "#b8508a",
-      "nombre": {
-        "es": "Foodie",
-        "en": "Foodie"
-      },
-      "lema": {
-        "es": "Mariscos, cafés y mercados",
-        "en": "Seafood, cafés and markets"
-      },
-      "categorias": [
-        "gastronomia"
-      ],
-      "etiquetas": [
-        "mariscos",
-        "mercado",
-        "cafe"
-      ],
-      "rutas": []
-    },
-    {
-      "id": "playa",
-      "icono": "beach",
-      "color": "#2f93a3",
-      "nombre": {
-        "es": "Playa y mar",
-        "en": "Beach & sea"
-      },
-      "lema": {
-        "es": "Playas, snorkel y lancha",
-        "en": "Beaches, snorkeling, boat trips"
-      },
-      "categorias": [
-        "playas"
-      ],
-      "etiquetas": [
-        "snorkel",
-        "lancha",
-        "vela"
-      ],
-      "rutas": []
-    },
-    {
-      "id": "aventura",
-      "icono": "kayak",
-      "color": "#2c8a6e",
-      "nombre": {
-        "es": "Aventura",
-        "en": "Adventure"
-      },
-      "lema": {
-        "es": "Hiking, kayak, buceo y bici",
-        "en": "Hiking, kayak, diving, biking"
-      },
-      "categorias": [
-        "tours"
-      ],
-      "etiquetas": [
-        "aventura",
-        "kayak",
-        "hiking",
-        "buceo",
-        "bici"
-      ],
-      "rutas": [
-        "hiking"
-      ]
-    },
-    {
-      "id": "cultura",
-      "icono": "museum",
-      "color": "#7d62a8",
-      "nombre": {
-        "es": "Cultura e historia",
-        "en": "Culture & history"
-      },
-      "lema": {
-        "es": "Museos, murales y personajes",
-        "en": "Museums, murals and people"
-      },
-      "categorias": [
-        "historia",
-        "cultura"
-      ],
-      "etiquetas": [
-        "murales"
-      ],
-      "rutas": [
-        "historica",
-        "murales"
-      ]
-    },
-    {
-      "id": "noche",
-      "icono": "cocktail",
-      "color": "#6a4c9c",
-      "nombre": {
-        "es": "Noche y fiesta",
-        "en": "Night out"
-      },
-      "lema": {
-        "es": "Bares, antros y música en vivo",
-        "en": "Bars, clubs, live music"
-      },
-      "categorias": [
-        "vida_nocturna"
-      ],
-      "etiquetas": [
-        "bar",
-        "musica",
-        "nocturno"
-      ],
-      "rutas": []
-    },
-    {
-      "id": "familia",
-      "icono": "family",
-      "color": "#cf862c",
-      "nombre": {
-        "es": "En familia",
-        "en": "Family"
-      },
-      "lema": {
-        "es": "Playas tranquilas y museos",
-        "en": "Calm beaches and museums"
-      },
-      "categorias": [],
-      "etiquetas": [
-        "familiar"
-      ],
-      "rutas": [
-        "malecon"
-      ]
-    },
-    {
-      "id": "naturaleza",
-      "icono": "whaleshark",
-      "color": "#5f8f4e",
-      "nombre": {
-        "es": "Naturaleza y fauna",
-        "en": "Nature & wildlife"
-      },
-      "lema": {
-        "es": "Tiburón ballena, lobos marinos, aves",
-        "en": "Whale sharks, sea lions, birds"
-      },
-      "categorias": [
-        "naturaleza"
-      ],
-      "etiquetas": [
-        "fauna",
-        "aves"
-      ],
-      "rutas": []
-    },
-    {
-      "id": "relax",
-      "icono": "palm",
-      "color": "#d9a441",
-      "nombre": {
-        "es": "Relax",
-        "en": "Relax"
-      },
-      "lema": {
-        "es": "Cafés, spas y atardeceres",
-        "en": "Cafés, spas and sunsets"
-      },
-      "categorias": [
-        "hospedaje"
-      ],
-      "etiquetas": [
-        "relax",
-        "atardecer",
-        "spa",
-        "cafe"
-      ],
-      "rutas": []
-    }
+  {
+   "tipo": "cata",
+   "velocidad": 5,
+   "ruta": [
+    [
+     -110.31955,
+     24.21785
+    ],
+    [
+     -110.32867,
+     24.23164
+    ],
+    [
+     -110.3424,
+     24.25326
+    ],
+    [
+     -110.34605,
+     24.28222
+    ],
+    [
+     -110.35144,
+     24.30982
+    ],
+    [
+     -110.34221,
+     24.33025
+    ]
+   ],
+   "circular": false
+  }
+ ],
+ "vista_inicial": {
+  "sw": [
+   -110.4,
+   24.12
   ],
-  "emergencias": [
-    {
-      "telefono": "911",
-      "nombre": {
-        "es": "Emergencias",
-        "en": "Emergencies"
-      },
-      "nota": {
-        "es": "Policía, ambulancia y bomberos",
-        "en": "Police, ambulance and fire"
-      }
-    },
-    {
-      "telefono": "089",
-      "nombre": {
-        "es": "Denuncia anónima",
-        "en": "Anonymous report"
-      },
-      "nota": {
-        "es": "Reportes anónimos",
-        "en": "Anonymous tips"
-      }
-    },
-    {
-      "telefono": "078",
-      "nombre": {
-        "es": "Atención al turista",
-        "en": "Tourist assistance"
-      },
-      "nota": {
-        "es": "Ángeles Verdes · asistencia en carretera",
-        "en": "Green Angels · roadside assistance"
-      }
-    }
-  ],
-  "rutas": [],
-  "nota_perfiles": "Cada perfil enciende sus 'categorias' y los lugares que tengan alguna de sus 'etiquetas'. 'rutas' guarda los ids de las rutas que sugerirá (se agregarán en la fase de rutas). 'emergencias' es el directorio del botón Necesito…; verifica los números antes de publicar.",
-  "config": {
-    "registroUrl": "",
-    "afiliadosUrl": "afiliados.html",
-    "clima": "https://raw.githubusercontent.com/Tripprowild/lapaz.map/clima/clima.json"
+  "ne": [
+   -110.27,
+   24.35
+  ]
+ },
+ "perfiles": [
+  {
+   "id": "imperdible",
+   "icono": "hongo",
+   "color": "#c0553a",
+   "nombre": {
+    "es": "Lo imperdible",
+    "en": "Must-see"
+   },
+   "lema": {
+    "es": "Primera vez en La Paz",
+    "en": "First time in La Paz"
+   },
+   "categorias": [],
+   "etiquetas": [
+    "imperdible"
+   ],
+   "rutas": [
+    "malecon"
+   ]
   },
-  "afiliados": [],
-  "eventos": [
-    {
-      "id": "carnaval-2027",
-      "banner": "carnaval",
-      "titulo_banner": "Carnaval La Paz",
-      "coordenadas": [
-        -110.3105,
-        24.1676
-      ],
-      "inicio": "2027-02-04",
-      "fin": "2027-02-09",
-      "mostrar_dias": 120,
-      "nombre": {
-        "es": "Carnaval La Paz 2027",
-        "en": "La Paz Carnival 2027"
-      },
-      "lema": {
-        "es": "La Fiesta del Futuro",
-        "en": "The Party of the Future"
-      },
-      "lugar": {
-        "es": "Malecón de La Paz",
-        "en": "La Paz boardwalk"
-      },
-      "descripcion": {
-        "es": "Seis días de fiesta en el malecón con el lema “La Fiesta del Futuro”. Las comparsas desfilan el 7, 8 y 9 de febrero. Sin pirotecnia: la coronación tendrá un espectáculo de luces inclusivo para personas con autismo y sensibilidad al ruido.",
-        "en": "Six days of celebration on the boardwalk under the theme “The Party of the Future”. Parades run February 7, 8 and 9. No fireworks: the coronation features an inclusive light show for people with autism and noise sensitivity."
-      },
-      "enlace": "https://www.facebook.com/CarnavalLaPazBCS/"
-    }
-  ],
-  "cupones": [
-    {
-      "id": "ej-desc10",
-      "ejemplo": true,
-      "negocio": "ej-restaurante",
-      "tipo": "descuento",
-      "prefijo": "LPZ",
-      "color": "#b8508a",
-      "vence": "2026-12-31",
-      "titulo": {
-        "es": "10% de descuento en tu cuenta",
-        "en": "10% off your bill"
-      },
-      "condiciones": {
-        "es": "Cupón de ejemplo. Válido en consumo mínimo de $400. No acumulable con otras promociones.",
-        "en": "Sample coupon. Minimum spend $400. Can’t be combined with other offers."
-      }
-    },
-    {
-      "id": "ej-cafe",
-      "ejemplo": true,
-      "negocio": "ej-cafe",
-      "tipo": "cortesia",
-      "prefijo": "LPZ",
-      "color": "#a9673d",
-      "vence": "2026-12-31",
-      "titulo": {
-        "es": "Café americano de cortesía",
-        "en": "Free americano"
-      },
-      "condiciones": {
-        "es": "Cupón de ejemplo. Al comprar cualquier desayuno.",
-        "en": "Sample coupon. With any breakfast."
-      }
-    },
-    {
-      "id": "ej-snorkel",
-      "ejemplo": true,
-      "negocio": "ej-tour",
-      "tipo": "upgrade",
-      "prefijo": "LPZ",
-      "color": "#2c8a6e",
-      "vence": "2027-03-31",
-      "titulo": {
-        "es": "Upgrade: equipo de snorkel premium",
-        "en": "Upgrade: premium snorkel gear"
-      },
-      "condiciones": {
-        "es": "Cupón de ejemplo. Al reservar el tour a Espíritu Santo.",
-        "en": "Sample coupon. When you book the Espíritu Santo tour."
-      }
-    }
-  ],
-  "nota_fase3": "'config.registroUrl' = URL de la aplicación web de Google Apps Script (Google Sheets) donde se guardan cupones descargados y solicitudes de negocios. 'afiliados' = hasta 6 ids de lugares para 'Recomendados del mes'. 'eventos' aparecen en el mapa y en Hoy en La Paz desde 'mostrar_dias' antes de 'inicio'. 'cupones': tipo descuento | cortesia | upgrade; cada descarga genera un código único."
+  {
+   "id": "foodie",
+   "icono": "food",
+   "color": "#b8508a",
+   "nombre": {
+    "es": "Foodie",
+    "en": "Foodie"
+   },
+   "lema": {
+    "es": "Mariscos, cafés y mercados",
+    "en": "Seafood, cafés and markets"
+   },
+   "categorias": [
+    "gastronomia"
+   ],
+   "etiquetas": [
+    "mariscos",
+    "mercado",
+    "cafe"
+   ],
+   "rutas": []
+  },
+  {
+   "id": "playa",
+   "icono": "beach",
+   "color": "#2f93a3",
+   "nombre": {
+    "es": "Playa y mar",
+    "en": "Beach & sea"
+   },
+   "lema": {
+    "es": "Playas, snorkel y lancha",
+    "en": "Beaches, snorkeling, boat trips"
+   },
+   "categorias": [
+    "playas"
+   ],
+   "etiquetas": [
+    "snorkel",
+    "lancha",
+    "vela"
+   ],
+   "rutas": []
+  },
+  {
+   "id": "aventura",
+   "icono": "kayak",
+   "color": "#2c8a6e",
+   "nombre": {
+    "es": "Aventura",
+    "en": "Adventure"
+   },
+   "lema": {
+    "es": "Hiking, kayak, buceo y bici",
+    "en": "Hiking, kayak, diving, biking"
+   },
+   "categorias": [
+    "tours"
+   ],
+   "etiquetas": [
+    "aventura",
+    "kayak",
+    "hiking",
+    "buceo",
+    "bici"
+   ],
+   "rutas": [
+    "hiking"
+   ]
+  },
+  {
+   "id": "cultura",
+   "icono": "museum",
+   "color": "#7d62a8",
+   "nombre": {
+    "es": "Cultura e historia",
+    "en": "Culture & history"
+   },
+   "lema": {
+    "es": "Museos, murales y personajes",
+    "en": "Museums, murals and people"
+   },
+   "categorias": [
+    "historia",
+    "cultura"
+   ],
+   "etiquetas": [
+    "murales"
+   ],
+   "rutas": [
+    "historica",
+    "murales"
+   ]
+  },
+  {
+   "id": "noche",
+   "icono": "cocktail",
+   "color": "#6a4c9c",
+   "nombre": {
+    "es": "Noche y fiesta",
+    "en": "Night out"
+   },
+   "lema": {
+    "es": "Bares, antros y música en vivo",
+    "en": "Bars, clubs, live music"
+   },
+   "categorias": [
+    "vida_nocturna"
+   ],
+   "etiquetas": [
+    "bar",
+    "musica",
+    "nocturno"
+   ],
+   "rutas": []
+  },
+  {
+   "id": "familia",
+   "icono": "family",
+   "color": "#cf862c",
+   "nombre": {
+    "es": "En familia",
+    "en": "Family"
+   },
+   "lema": {
+    "es": "Playas tranquilas y museos",
+    "en": "Calm beaches and museums"
+   },
+   "categorias": [],
+   "etiquetas": [
+    "familiar"
+   ],
+   "rutas": [
+    "malecon"
+   ]
+  },
+  {
+   "id": "naturaleza",
+   "icono": "whaleshark",
+   "color": "#5f8f4e",
+   "nombre": {
+    "es": "Naturaleza y fauna",
+    "en": "Nature & wildlife"
+   },
+   "lema": {
+    "es": "Tiburón ballena, lobos marinos, aves",
+    "en": "Whale sharks, sea lions, birds"
+   },
+   "categorias": [
+    "naturaleza"
+   ],
+   "etiquetas": [
+    "fauna",
+    "aves"
+   ],
+   "rutas": []
+  },
+  {
+   "id": "relax",
+   "icono": "palm",
+   "color": "#d9a441",
+   "nombre": {
+    "es": "Relax",
+    "en": "Relax"
+   },
+   "lema": {
+    "es": "Cafés, spas y atardeceres",
+    "en": "Cafés, spas and sunsets"
+   },
+   "categorias": [
+    "hospedaje"
+   ],
+   "etiquetas": [
+    "relax",
+    "atardecer",
+    "spa",
+    "cafe"
+   ],
+   "rutas": []
+  }
+ ],
+ "emergencias": [
+  {
+   "telefono": "911",
+   "nombre": {
+    "es": "Emergencias",
+    "en": "Emergencies"
+   },
+   "nota": {
+    "es": "Policía, ambulancia y bomberos",
+    "en": "Police, ambulance and fire"
+   }
+  },
+  {
+   "telefono": "089",
+   "nombre": {
+    "es": "Denuncia anónima",
+    "en": "Anonymous report"
+   },
+   "nota": {
+    "es": "Reportes anónimos",
+    "en": "Anonymous tips"
+   }
+  },
+  {
+   "telefono": "078",
+   "nombre": {
+    "es": "Atención al turista",
+    "en": "Tourist assistance"
+   },
+   "nota": {
+    "es": "Ángeles Verdes · asistencia en carretera",
+    "en": "Green Angels · roadside assistance"
+   }
+  }
+ ],
+ "rutas": [],
+ "nota_perfiles": "Cada perfil enciende sus 'categorias' y los lugares que tengan alguna de sus 'etiquetas'. 'rutas' guarda los ids de las rutas que sugerirá (se agregarán en la fase de rutas). 'emergencias' es el directorio del botón Necesito…; verifica los números antes de publicar.",
+ "config": {
+  "registroUrl": "",
+  "afiliadosUrl": "afiliados.html",
+  "clima": "https://raw.githubusercontent.com/Tripprowild/lapaz.map/clima/clima.json"
+ },
+ "afiliados": [
+  "thehook"
+ ],
+ "eventos": [
+  {
+   "id": "carnaval-2027",
+   "banner": "carnaval",
+   "titulo_banner": "Carnaval La Paz",
+   "coordenadas": [
+    -110.3105,
+    24.1676
+   ],
+   "inicio": "2027-02-04",
+   "fin": "2027-02-09",
+   "mostrar_dias": 120,
+   "nombre": {
+    "es": "Carnaval La Paz 2027",
+    "en": "La Paz Carnival 2027"
+   },
+   "lema": {
+    "es": "La Fiesta del Futuro",
+    "en": "The Party of the Future"
+   },
+   "lugar": {
+    "es": "Malecón de La Paz",
+    "en": "La Paz boardwalk"
+   },
+   "descripcion": {
+    "es": "Seis días de fiesta en el malecón con el lema “La Fiesta del Futuro”. Las comparsas desfilan el 7, 8 y 9 de febrero. Sin pirotecnia: la coronación tendrá un espectáculo de luces inclusivo para personas con autismo y sensibilidad al ruido.",
+    "en": "Six days of celebration on the boardwalk under the theme “The Party of the Future”. Parades run February 7, 8 and 9. No fireworks: the coronation features an inclusive light show for people with autism and noise sensitivity."
+   },
+   "enlace": "https://www.facebook.com/CarnavalLaPazBCS/"
+  }
+ ],
+ "cupones": [
+  {
+   "id": "thehook-10",
+   "negocio": "thehook",
+   "tipo": "descuento",
+   "prefijo": "HOOK",
+   "color": "#2c6e8a",
+   "vence": "2026-12-31",
+   "titulo": {
+    "es": "10% de descuento en toda la tienda",
+    "en": "10% off the entire shop"
+   },
+   "condiciones": {
+    "es": "Al reservar tu tour con The Hook. Tienda: equipo Cressi y diseños de artistas locales.",
+    "en": "When you book your tour with The Hook. Shop: Cressi gear and designs by local artists."
+   }
+  },
+  {
+   "id": "ej-desc10",
+   "ejemplo": true,
+   "negocio": "ej-restaurante",
+   "tipo": "descuento",
+   "prefijo": "LPZ",
+   "color": "#b8508a",
+   "vence": "2026-12-31",
+   "titulo": {
+    "es": "10% de descuento en tu cuenta",
+    "en": "10% off your bill"
+   },
+   "condiciones": {
+    "es": "Cupón de ejemplo. Válido en consumo mínimo de $400. No acumulable con otras promociones.",
+    "en": "Sample coupon. Minimum spend $400. Can’t be combined with other offers."
+   }
+  },
+  {
+   "id": "ej-cafe",
+   "ejemplo": true,
+   "negocio": "ej-cafe",
+   "tipo": "cortesia",
+   "prefijo": "LPZ",
+   "color": "#a9673d",
+   "vence": "2026-12-31",
+   "titulo": {
+    "es": "Café americano de cortesía",
+    "en": "Free americano"
+   },
+   "condiciones": {
+    "es": "Cupón de ejemplo. Al comprar cualquier desayuno.",
+    "en": "Sample coupon. With any breakfast."
+   }
+  },
+  {
+   "id": "ej-snorkel",
+   "ejemplo": true,
+   "negocio": "ej-tour",
+   "tipo": "upgrade",
+   "prefijo": "LPZ",
+   "color": "#2c8a6e",
+   "vence": "2027-03-31",
+   "titulo": {
+    "es": "Upgrade: equipo de snorkel premium",
+    "en": "Upgrade: premium snorkel gear"
+   },
+   "condiciones": {
+    "es": "Cupón de ejemplo. Al reservar el tour a Espíritu Santo.",
+    "en": "Sample coupon. When you book the Espíritu Santo tour."
+   }
+  }
+ ],
+ "nota_fase3": "'config.registroUrl' = URL de la aplicación web de Google Apps Script (Google Sheets) donde se guardan cupones descargados y solicitudes de negocios. 'afiliados' = hasta 6 ids de lugares para 'Recomendados del mes'. 'eventos' aparecen en el mapa y en Hoy en La Paz desde 'mostrar_dias' antes de 'inicio'. 'cupones': tipo descuento | cortesia | upgrade; cada descarga genera un código único."
 }
