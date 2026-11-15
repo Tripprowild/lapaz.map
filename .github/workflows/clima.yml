@@ -1,0 +1,49 @@
+name: Clima La Paz
+
+# Descarga el pronóstico de MET Norway (CC BY 4.0) una vez por hora y lo publica
+# como clima.json en la rama "clima". El mapa lo lee desde raw.githubusercontent.com.
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clima:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar pronóstico (MET Norway)
+        run: |
+          curl -sSf -H "User-Agent: LaPazMapa/1.0 https://github.com/${{ github.repository }}" \
+            "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=24.16&lon=-110.31" -o met.json
+          python3 - <<'PY'
+          import json, datetime
+          d = json.load(open('met.json'))
+          ts = d['properties']['timeseries']
+          now = datetime.datetime.now(datetime.timezone.utc)
+          cur = min(ts, key=lambda t: abs(datetime.datetime.fromisoformat(t['time'].replace('Z', '+00:00')) - now))
+          det = cur['data']['instant']['details']
+          nxt = cur['data'].get('next_1_hours') or cur['data'].get('next_6_hours') or {}
+          out = {
+              'temp': det.get('air_temperature'),
+              'viento': det.get('wind_speed'),
+              'humedad': det.get('relative_humidity'),
+              'simbolo': nxt.get('summary', {}).get('symbol_code', ''),
+              'hora': cur['time'],
+              'actualizado': now.isoformat(timespec='seconds'),
+              'fuente': 'MET Norway (CC BY 4.0)'
+          }
+          json.dump(out, open('clima.json', 'w'), ensure_ascii=False)
+          print(out)
+          PY
+      - name: Publicar en la rama clima
+        run: |
+          mkdir pub && mv clima.json pub/ && cd pub
+          git init -q -b clima
+          git config user.name "clima-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add clima.json
+          git commit -qm "Clima $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" clima

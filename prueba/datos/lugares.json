@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "nota": "Coordenadas en [longitud, latitud]. 'verificar': true = ubicación aproximada (corrígela con el modo ajuste: agrega ?ajustar a la dirección). 'nivel': basico (pin + descripción breve) | destacado (descripción amplia, horario, contacto, hasta 4 fotos, se sugiere 'cerca de ti') | sobresaliente (todo lo anterior + sello Recomendado, redes sociales, enlaces, botón de reservar y hasta 12 fotos). 'referencias' liga lugares entre sí por su id. 'ejemplo': true marca fichas de muestra que deben reemplazarse por negocios reales.",
   "categorias": {
     "historia": {
@@ -1368,5 +1368,96 @@
     }
   ],
   "rutas": [],
-  "nota_perfiles": "Cada perfil enciende sus 'categorias' y los lugares que tengan alguna de sus 'etiquetas'. 'rutas' guarda los ids de las rutas que sugerirá (se agregarán en la fase de rutas). 'emergencias' es el directorio del botón Necesito…; verifica los números antes de publicar."
+  "nota_perfiles": "Cada perfil enciende sus 'categorias' y los lugares que tengan alguna de sus 'etiquetas'. 'rutas' guarda los ids de las rutas que sugerirá (se agregarán en la fase de rutas). 'emergencias' es el directorio del botón Necesito…; verifica los números antes de publicar.",
+  "config": {
+    "registroUrl": "",
+    "afiliadosUrl": "afiliados.html",
+    "clima": "https://raw.githubusercontent.com/Tripprowild/lapaz.map/clima/clima.json"
+  },
+  "afiliados": [],
+  "eventos": [
+    {
+      "id": "carnaval-2027",
+      "banner": "carnaval",
+      "titulo_banner": "Carnaval La Paz",
+      "coordenadas": [
+        -110.3105,
+        24.1676
+      ],
+      "inicio": "2027-02-04",
+      "fin": "2027-02-09",
+      "mostrar_dias": 120,
+      "nombre": {
+        "es": "Carnaval La Paz 2027",
+        "en": "La Paz Carnival 2027"
+      },
+      "lema": {
+        "es": "La Fiesta del Futuro",
+        "en": "The Party of the Future"
+      },
+      "lugar": {
+        "es": "Malecón de La Paz",
+        "en": "La Paz boardwalk"
+      },
+      "descripcion": {
+        "es": "Seis días de fiesta en el malecón con el lema “La Fiesta del Futuro”. Las comparsas desfilan el 7, 8 y 9 de febrero. Sin pirotecnia: la coronación tendrá un espectáculo de luces inclusivo para personas con autismo y sensibilidad al ruido.",
+        "en": "Six days of celebration on the boardwalk under the theme “The Party of the Future”. Parades run February 7, 8 and 9. No fireworks: the coronation features an inclusive light show for people with autism and noise sensitivity."
+      },
+      "enlace": "https://www.facebook.com/CarnavalLaPazBCS/"
+    }
+  ],
+  "cupones": [
+    {
+      "id": "ej-desc10",
+      "ejemplo": true,
+      "negocio": "ej-restaurante",
+      "tipo": "descuento",
+      "prefijo": "LPZ",
+      "color": "#b8508a",
+      "vence": "2026-12-31",
+      "titulo": {
+        "es": "10% de descuento en tu cuenta",
+        "en": "10% off your bill"
+      },
+      "condiciones": {
+        "es": "Cupón de ejemplo. Válido en consumo mínimo de $400. No acumulable con otras promociones.",
+        "en": "Sample coupon. Minimum spend $400. Can’t be combined with other offers."
+      }
+    },
+    {
+      "id": "ej-cafe",
+      "ejemplo": true,
+      "negocio": "ej-cafe",
+      "tipo": "cortesia",
+      "prefijo": "LPZ",
+      "color": "#a9673d",
+      "vence": "2026-12-31",
+      "titulo": {
+        "es": "Café americano de cortesía",
+        "en": "Free americano"
+      },
+      "condiciones": {
+        "es": "Cupón de ejemplo. Al comprar cualquier desayuno.",
+        "en": "Sample coupon. With any breakfast."
+      }
+    },
+    {
+      "id": "ej-snorkel",
+      "ejemplo": true,
+      "negocio": "ej-tour",
+      "tipo": "upgrade",
+      "prefijo": "LPZ",
+      "color": "#2c8a6e",
+      "vence": "2027-03-31",
+      "titulo": {
+        "es": "Upgrade: equipo de snorkel premium",
+        "en": "Upgrade: premium snorkel gear"
+      },
+      "condiciones": {
+        "es": "Cupón de ejemplo. Al reservar el tour a Espíritu Santo.",
+        "en": "Sample coupon. When you book the Espíritu Santo tour."
+      }
+    }
+  ],
+  "nota_fase3": "'config.registroUrl' = URL de la aplicación web de Google Apps Script (Google Sheets) donde se guardan cupones descargados y solicitudes de negocios. 'afiliados' = hasta 6 ids de lugares para 'Recomendados del mes'. 'eventos' aparecen en el mapa y en Hoy en La Paz desde 'mostrar_dias' antes de 'inicio'. 'cupones': tipo descuento | cortesia | upgrade; cada descarga genera un código único."
 }
