@@ -20,11 +20,11 @@ const UI = {
   es: { sub: 'Baja California Sur · mapa interactivo', q: 'Buscar lugares, calles, direcciones…', list: 'Lugares', people: 'Personajes e historia',
     refs: 'Relacionado', photos: 'Fotos', none: 'Sin resultados', person: 'Personaje', street: 'Calle', address: 'Dirección',
     hint: 'Acércate para ver calles y edificios', go: 'Cómo llegar', verify: 'Ubicación aproximada', N: 'N', O: 'O',
-    err: 'No se pudieron cargar los lugares.', zin: 'Acercar', zout: 'Alejar', home: 'Vista inicial', tilt: 'Vista 3D', fs: 'Pantalla completa', north: 'Norte', rec: 'Recomendado', recs: 'Recomendados', near: 'Cerca de mí', nearTitle: 'Recomendados cerca de ti', notHere: 'No pareces estar en La Paz: te mostramos lo recomendado cerca del centro.', geoErr: 'No pudimos obtener tu ubicación. Revisa el permiso de ubicación del navegador.', nearToast: 'Cerca de ti', contact: 'Contacto', social: 'Redes sociales', book: 'Reservar', hours: 'Horario', web: 'Sitio web', call: 'Llamar', example: 'Ejemplo', youHere: 'Estás aquí', noneNear: 'No hay lugares recomendados a menos de 3 km.', adj: 'Modo ajuste', adjHelp: 'Arrastra los medallones a su lugar exacto. Toca el mapa para ver coordenadas.', adjCopy: 'Copiar cambios', adjDl: 'Descargar lugares.json', adjBoats: 'Rutas de barcos', adjCopied: 'Cambios copiados', adjNone: 'Sin cambios todavía', adjChanged: 'cambios', copy: 'Copiar', wTitle: '¿Qué quieres descubrir hoy?', wSub: 'Elige hasta 3', wGo: 'Explorar', wAll: 'Ver todo', wNo: 'No mostrar de nuevo', mood: 'Mi mood', all: 'Todo', need: 'Necesito…', needTitle: '¿Qué necesitas?', svcAtm: 'Cajero', svcPharmacy: 'Farmacia', svcHospital: 'Hospital o clínica', svcEmerg: 'Emergencias', svcHide: 'Ocultar servicios', svcNone: 'No encontramos ese servicio en esta zona del mapa. Acércate o muévete a otra zona.', svcNear: 'Los más cercanos', open: 'Ver ficha', today: 'Hoy en La Paz', events: 'Eventos', coupons: 'Cuponera', partners: 'Recomendados del mes', yourBiz: 'Tu negocio aquí', yourBizSub: 'Anúnciate en el mapa', sunset: 'Atardecer', weatherBy: 'Clima: MET Norway', inDays: 'Faltan {n} días', today2: '¡Hoy!', nowOn: 'En curso', until: 'Válido hasta', getCoupon: 'Descargar cupón', yourCode: 'Tu código', saved: 'Cupón guardado en tu teléfono', already: 'Ya descargaste este cupón', showAt: 'Muestra este código en el negocio.', expired: 'Vencido', couponTypes: { descuento: 'Descuento', cortesia: 'Cortesía', upgrade: 'Upgrade' }, back: 'Volver', moreInfo: 'Más información' },
+    err: 'No se pudieron cargar los lugares.', zin: 'Acercar', zout: 'Alejar', home: 'Vista inicial', tilt: 'Vista 3D', fs: 'Pantalla completa', north: 'Norte', rec: 'Recomendado', recs: 'Recomendados', near: 'Cerca de mí', nearTitle: 'Recomendados cerca de ti', notHere: 'No pareces estar en La Paz: te mostramos lo recomendado cerca del centro.', geoErr: 'No pudimos obtener tu ubicación. Revisa el permiso de ubicación del navegador.', nearToast: 'Cerca de ti', contact: 'Contacto', social: 'Redes sociales', book: 'Reservar', hours: 'Horario', web: 'Sitio web', call: 'Llamar', example: 'Ejemplo', youHere: 'Estás aquí', noneNear: 'No hay lugares recomendados a menos de 3 km.', adj: 'Modo ajuste', adjHelp: 'Arrastra los medallones a su lugar exacto. Toca el mapa para ver coordenadas.', adjCopy: 'Copiar cambios', adjDl: 'Descargar lugares.json', adjBoats: 'Rutas de barcos', adjCopied: 'Cambios copiados', adjNone: 'Sin cambios todavía', adjChanged: 'cambios', copy: 'Copiar', wTitle: '¿Qué quieres descubrir hoy?', wSub: 'Elige hasta 3', wGo: 'Explorar', wAll: 'Ver todo', wNo: 'No mostrar de nuevo', mood: 'Mi mood', all: 'Todo', need: 'Necesito…', needTitle: '¿Qué necesitas?', svcAtm: 'Cajero', svcPharmacy: 'Farmacia', svcHospital: 'Hospital o clínica', svcEmerg: 'Emergencias', svcHide: 'Ocultar servicios', svcNone: 'No encontramos ese servicio en esta zona del mapa. Acércate o muévete a otra zona.', svcNear: 'Los más cercanos', open: 'Ver ficha', today: 'Hoy en La Paz', events: 'Eventos', coupons: 'Cuponera', partners: 'Recomendados del mes', yourBiz: 'Tu negocio aquí', yourBizSub: 'Anúnciate en el mapa', sunset: 'Atardecer', weatherBy: 'Clima: MET Norway', inDays: 'Faltan {n} días', today2: '¡Hoy!', nowOn: 'En curso', until: 'Válido hasta', getCoupon: 'Descargar cupón', yourCode: 'Tu código', saved: 'Cupón guardado en tu teléfono', already: 'Ya descargaste este cupón', showAt: 'Muestra este código en el negocio.', expired: 'Vencido', couponTypes: { descuento: 'Descuento', cortesia: 'Cortesía', upgrade: 'Upgrade' }, back: 'Volver', moreInfo: 'Más información', official: 'Oficial', community: 'Comunitario', seeMap: 'Ver en el mapa', copyLoc: 'Copiar ubicación', copiedLoc: 'Ubicación copiada', report: 'Reportar', reportSent: 'Gracias, lo revisaremos.', reasons: ['Información falsa o engañosa', 'Contenido inapropiado', 'El evento ya no se realiza', 'Spam o publicidad'], propose: 'Proponer un evento', noEvents: 'No hay eventos próximos por ahora.', free: 'Gratis', evUpcoming: '{n} eventos próximos', evOne: '1 evento próximo', subTitle: 'Cupones para suscriptores', subSub: 'Suscríbete gratis con tu correo para ver y descargar los cupones de los negocios de La Paz.', email: 'Correo electrónico', nameOpt: 'Nombre (opcional)', consent: 'Acepto el aviso de privacidad y recibir promociones del mapa por correo.', privacy: 'Aviso de privacidad', sendCode: 'Enviar código', codeSent: 'Enviamos un código de 6 dígitos a {e}. Revisa también la carpeta de spam.', code: 'Código de 6 dígitos', verify: 'Verificar', resend: 'Reenviar código', changeEmail: 'Cambiar correo', subOk: '¡Listo! Ya eres suscriptor.', subOff: 'La suscripción a cupones estará disponible muy pronto.', badEmail: 'Escribe un correo válido.', needConsent: 'Acepta el aviso de privacidad para continuar.', badCode: 'Código incorrecto o vencido.', tooMany: 'Demasiados intentos. Espera unos minutos.', netErr: 'No se pudo conectar. Inténtalo de nuevo.', subAs: 'Suscrito como {e}', logout: 'Salir', sending: 'Enviando…', coupHint: 'Toca un cupón para descargarlo.' },
   en: { sub: 'Baja California Sur · interactive map', q: 'Search places, streets, addresses…', list: 'Places', people: 'People & history',
     refs: 'Related', photos: 'Photos', none: 'No results', person: 'Person', street: 'Street', address: 'Address',
     hint: 'Zoom in to see streets and buildings', go: 'Directions', verify: 'Approximate location', N: 'N', O: 'W',
-    err: 'Places could not be loaded.', zin: 'Zoom in', zout: 'Zoom out', home: 'Home view', tilt: '3D view', fs: 'Full screen', north: 'North', rec: 'Recommended', recs: 'Recommended', near: 'Near me', nearTitle: 'Recommended near you', notHere: 'You don’t seem to be in La Paz: here are recommendations near downtown.', geoErr: 'We couldn’t get your location. Check the browser’s location permission.', nearToast: 'Near you', contact: 'Contact', social: 'Social media', book: 'Book', hours: 'Hours', web: 'Website', call: 'Call', example: 'Example', youHere: 'You are here', noneNear: 'No recommended places within 3 km.', adj: 'Adjust mode', adjHelp: 'Drag the medallions to their exact spot. Tap the map to see coordinates.', adjCopy: 'Copy changes', adjDl: 'Download lugares.json', adjBoats: 'Boat routes', adjCopied: 'Changes copied', adjNone: 'No changes yet', adjChanged: 'changes', copy: 'Copy', wTitle: 'What do you want to discover today?', wSub: 'Pick up to 3', wGo: 'Explore', wAll: 'See everything', wNo: 'Don’t show again', mood: 'My mood', all: 'All', need: 'I need…', needTitle: 'What do you need?', svcAtm: 'ATM', svcPharmacy: 'Pharmacy', svcHospital: 'Hospital or clinic', svcEmerg: 'Emergencies', svcHide: 'Hide services', svcNone: 'We couldn’t find that service in this part of the map. Zoom in or move elsewhere.', svcNear: 'Nearest', open: 'View details', today: 'Today in La Paz', events: 'Events', coupons: 'Coupons', partners: 'This month’s picks', yourBiz: 'Your business here', yourBizSub: 'Advertise on the map', sunset: 'Sunset', weatherBy: 'Weather: MET Norway', inDays: '{n} days to go', today2: 'Today!', nowOn: 'Happening now', until: 'Valid until', getCoupon: 'Get coupon', yourCode: 'Your code', saved: 'Coupon saved to your phone', already: 'You already got this coupon', showAt: 'Show this code at the business.', expired: 'Expired', couponTypes: { descuento: 'Discount', cortesia: 'Freebie', upgrade: 'Upgrade' }, back: 'Back', moreInfo: 'More info' }
+    err: 'Places could not be loaded.', zin: 'Zoom in', zout: 'Zoom out', home: 'Home view', tilt: '3D view', fs: 'Full screen', north: 'North', rec: 'Recommended', recs: 'Recommended', near: 'Near me', nearTitle: 'Recommended near you', notHere: 'You don’t seem to be in La Paz: here are recommendations near downtown.', geoErr: 'We couldn’t get your location. Check the browser’s location permission.', nearToast: 'Near you', contact: 'Contact', social: 'Social media', book: 'Book', hours: 'Hours', web: 'Website', call: 'Call', example: 'Example', youHere: 'You are here', noneNear: 'No recommended places within 3 km.', adj: 'Adjust mode', adjHelp: 'Drag the medallions to their exact spot. Tap the map to see coordinates.', adjCopy: 'Copy changes', adjDl: 'Download lugares.json', adjBoats: 'Boat routes', adjCopied: 'Changes copied', adjNone: 'No changes yet', adjChanged: 'changes', copy: 'Copy', wTitle: 'What do you want to discover today?', wSub: 'Pick up to 3', wGo: 'Explore', wAll: 'See everything', wNo: 'Don’t show again', mood: 'My mood', all: 'All', need: 'I need…', needTitle: 'What do you need?', svcAtm: 'ATM', svcPharmacy: 'Pharmacy', svcHospital: 'Hospital or clinic', svcEmerg: 'Emergencies', svcHide: 'Hide services', svcNone: 'We couldn’t find that service in this part of the map. Zoom in or move elsewhere.', svcNear: 'Nearest', open: 'View details', today: 'Today in La Paz', events: 'Events', coupons: 'Coupons', partners: 'This month’s picks', yourBiz: 'Your business here', yourBizSub: 'Advertise on the map', sunset: 'Sunset', weatherBy: 'Weather: MET Norway', inDays: '{n} days to go', today2: 'Today!', nowOn: 'Happening now', until: 'Valid until', getCoupon: 'Get coupon', yourCode: 'Your code', saved: 'Coupon saved to your phone', already: 'You already got this coupon', showAt: 'Show this code at the business.', expired: 'Expired', couponTypes: { descuento: 'Discount', cortesia: 'Freebie', upgrade: 'Upgrade' }, back: 'Back', moreInfo: 'More info', official: 'Official', community: 'Community', seeMap: 'See on map', copyLoc: 'Copy location', copiedLoc: 'Location copied', report: 'Report', reportSent: 'Thanks, we’ll review it.', reasons: ['False or misleading info', 'Inappropriate content', 'Event no longer happening', 'Spam or advertising'], propose: 'Submit an event', noEvents: 'No upcoming events right now.', free: 'Free', evUpcoming: '{n} upcoming events', evOne: '1 upcoming event', subTitle: 'Coupons for subscribers', subSub: 'Subscribe for free with your email to see and download coupons from La Paz businesses.', email: 'Email', nameOpt: 'Name (optional)', consent: 'I accept the privacy notice and agree to receive promotions from the map by email.', privacy: 'Privacy notice', sendCode: 'Send code', codeSent: 'We sent a 6-digit code to {e}. Check your spam folder too.', code: '6-digit code', verify: 'Verify', resend: 'Resend code', changeEmail: 'Change email', subOk: 'Done! You’re subscribed.', subOff: 'Coupon subscriptions are coming soon.', badEmail: 'Enter a valid email.', needConsent: 'Accept the privacy notice to continue.', badCode: 'Wrong or expired code.', tooMany: 'Too many attempts. Wait a few minutes.', netErr: 'Couldn’t connect. Try again.', subAs: 'Subscribed as {e}', logout: 'Sign out', sending: 'Sending…', coupHint: 'Tap a coupon to download it.' }
 };
 const PAL = { roof: ['#c8553d', '#b5482f', '#d26a45', '#d9a441', '#e2b98a', '#3f8f8c', '#efe9dc', '#cf7558'] };
 
@@ -390,9 +390,11 @@ function init(root) {
     const L = UI[lang], names = chosen.map(id => (PROFILES.find(x => x.id === id) || {}).nombre).filter(Boolean).map(n => n[lang]);
     const moodTxt = showAll && !chosen.length ? L.all : names.join(', ');
     $('.mlp-chips').innerHTML = (PROFILES.length ? `<button class="mlp-chip mlp-moodchip" data-mood="1">✦ ${L.mood}: <em>${esc(moodTxt)}</em></button>` : '')
+      + `<button class="mlp-chip mlp-xchip" data-x="ev">${SVGX.cal}${L.events}</button><button class="mlp-chip mlp-xchip" data-x="cp">${SVGX.tkt}${L.coupons}</button>`
       + `<button class="mlp-chip mlp-recchip${onlyRec ? ' on' : ''}" data-rec="1">★ ${L.recs}</button>`
       + Object.keys(CATS).filter(k => !CATS[k].servicio).map(k => `<button class="mlp-chip${activeCats.has(k) ? ' on' : ' off'}" data-k="${esc(k)}" style="--c:var(--${k})"><i></i>${esc(CATS[k][lang])}</button>`).join('');
     const mc = root.querySelector('.mlp-moodchip'); if (mc) mc.onclick = () => openWelcome(true);
+    root.querySelectorAll('.mlp-xchip').forEach(b => b.onclick = () => b.dataset.x === 'ev' ? openEvents() : openCoupons());
     const rc = root.querySelector('.mlp-recchip'); if (rc) rc.onclick = () => { onlyRec = !onlyRec; renderChips(); scheduleOverlay(); };
     root.querySelectorAll('.mlp-chip[data-k]').forEach(b => b.onclick = () => { const k = b.dataset.k; activeCats.has(k) ? activeCats.delete(k) : activeCats.add(k); renderChips(); scheduleOverlay(); });
   }
@@ -511,6 +513,7 @@ function init(root) {
   const fmtTime = (d, opt) => new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-MX', Object.assign({ timeZone: TZ, hour: 'numeric', minute: '2-digit' }, opt || {})).format(d);
   const fmtDate = (iso, opt) => new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-MX', Object.assign({ timeZone: 'UTC', day: 'numeric', month: 'long' }, opt || {})).format(new Date(iso + 'T12:00:00Z'));
   function fmtRange(a, b) {
+    if (!b || a === b) return fmtDate(a);
     const da = new Date(a + 'T12:00:00Z'), db = new Date(b + 'T12:00:00Z');
     if (da.getUTCMonth() === db.getUTCMonth()) return da.getUTCDate() + '–' + fmtDate(b);
     return fmtDate(a) + ' – ' + fmtDate(b);
@@ -538,14 +541,87 @@ function init(root) {
   function eventState(e) { const a = daysTo(e.inicio), b = daysTo(e.fin); return b < 0 ? 'past' : a <= 0 ? 'now' : 'soon'; }
   function eventBadge(e) { const L = UI[lang], st = eventState(e), n = daysTo(e.inicio); return st === 'now' ? L.nowOn : n === 0 ? L.today2 : L.inDays.replace('{n}', n); }
   function upcoming() { return (DATA.eventos || []).filter(e => eventState(e) !== 'past' && daysTo(e.inicio) <= (e.mostrar_dias || 120)).sort((a, b) => a.inicio < b.inicio ? -1 : 1); }
+  const SVGX = { cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>', tkt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.5"/></svg>' };
+  let COMM = [];
+  const apiUrl = () => (DATA && DATA.config && DATA.config.registroUrl) || '';
+  function api(obj) { const u = apiUrl(); if (!u) return Promise.reject(new Error('nourl')); return fetch(u, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(obj) }).then(r => r.json()); }
   function buildEvents() {
-    upcoming().forEach(e => {
-      if (!e.coordenadas) return;
-      const el = document.createElement('div'); el.className = 'mlp-evmk';
-      el.innerHTML = `<div class="mlp-evcal"><b>${new Date(e.inicio + 'T12:00:00Z').getUTCDate()}</b><span>${fmtDate(e.inicio, { month: 'short' }).replace(/\d+\s*(de\s*)?/, '')}</span></div><div class="mlp-evlbl">${esc(e.nombre[lang])}</div>`;
-      el.addEventListener('click', ev => { ev.stopPropagation(); openToday('ev:' + e.id); });
-      e._mk = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat(e.coordenadas).addTo(map);
-    });
+    const u = apiUrl(); if (!u) return;
+    fetch(u + (u.includes('?') ? '&' : '?') + 'accion=eventos').then(r => r.json()).then(j => {
+      COMM = ((j && j.eventos) || []).filter(e => e && e.nombre && e.inicio).map(e => { const t = v => ({ es: v || '', en: v || '' }); return { id: 'c-' + e.id, comunitario: true, nombre: t(e.nombre), inicio: e.inicio, fin: e.fin || e.inicio, hora: e.hora || '', lugar: t([e.lugar, e.direccion].filter(Boolean).join(' · ')), descripcion: t(e.descripcion), enlace: e.enlace || '', precio: e.precio || '', categoria: e.categoria || '', coordenadas: isFinite(+e.lon) && isFinite(+e.lat) && +e.lat ? [+e.lon, +e.lat] : null, mostrar_dias: 200 }; });
+    }).catch(() => {});
+  }
+  function allEvents() { return upcoming().concat(COMM.filter(e => eventState(e) !== 'past')).sort((a, b) => a.inicio < b.inicio ? -1 : 1); }
+  function autoBanner(e) { const d = new Date(e.inicio + 'T12:00:00Z'); return `<div class="mlp-evauto"><div class="mlp-evday"><b>${d.getUTCDate()}</b><span>${esc(fmtDate(e.inicio, { month: 'short' }).replace(/\d+\s*(de\s*)?/, '').replace('.', ''))}</span></div><b class="mlp-evname">${esc(e.nombre[lang])}</b></div>`; }
+  let evPin = null;
+  function showEventPin(e) {
+    if (evPin) evPin.remove();
+    const el = document.createElement('div'); el.className = 'mlp-evpin';
+    el.innerHTML = `<div class="mlp-evflag">${SVGX.cal}<span>${esc(e.nombre[lang])}</span><i aria-label="×">×</i></div>`;
+    el.querySelector('i').onclick = ev => { ev.stopPropagation(); evPin.remove(); evPin = null; };
+    el.onclick = () => openEvents(e.id);
+    evPin = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat(e.coordenadas).addTo(map);
+  }
+  function openEvents(focus) {
+    if (!DATA) return;
+    const L = UI[lang], evs = allEvents(); list._near = true;
+    $('.mlp-lh b').textContent = L.events;
+    $('.mlp-lb').innerHTML = (evs.length ? evs.map(e => `<div class="mlp-ev" data-ev="${esc(e.id)}">${BANNERS[e.banner] ? BANNERS[e.banner](e) : autoBanner(e)}<div class="mlp-evbody"><span class="mlp-evbadge">${eventBadge(e)}</span> <span class="mlp-evkind${e.comunitario ? ' com' : ''}">${e.comunitario ? L.community : L.official}</span><b>${esc(e.nombre[lang])}</b><small>📅 ${esc(fmtRange(e.inicio, e.fin))}${e.hora ? ' · ' + esc(e.hora) : ''}</small>${e.lugar && e.lugar[lang] ? `<small>📍 ${esc(e.lugar[lang])}</small>` : ''}${e.precio ? `<small>🎟 ${esc(/^(0|gratis|free)$/i.test(e.precio) ? L.free : e.precio)}</small>` : ''}<p>${esc(e.descripcion ? e.descripcion[lang] : '')}</p>
+      <div class="mlp-actions">${e.coordenadas ? `<button class="mlp-btn" data-see="${esc(e.id)}">📍 ${L.seeMap}</button><button class="mlp-btn" data-cp="${esc(e.id)}">⧉ ${L.copyLoc}</button>` : ''}${e.enlace ? `<a class="mlp-btn" href="${esc(e.enlace)}" target="_blank" rel="noopener">${L.moreInfo} ↗</a>` : ''}${e.comunitario ? `<button class="mlp-btn mlp-rep" data-rep="${esc(e.id)}">⚑ ${L.report}</button>` : ''}</div><div class="mlp-repbox"></div></div></div>`).join('') : `<p class="mlp-empty">${L.noEvents}</p>`)
+      + `<a class="mlp-btn primary mlp-propose" href="${esc((DATA.config && DATA.config.eventosUrl) || 'eventos.html')}">＋ ${L.propose}</a>`;
+    const lb = $('.mlp-lb'), find = id => evs.find(x => x.id === id);
+    lb.querySelectorAll('[data-see]').forEach(b => b.onclick = () => { const e = find(b.dataset.see); closeList(); showEventPin(e); map.flyTo({ center: e.coordenadas, zoom: 16, essential: true }); });
+    lb.querySelectorAll('[data-cp]').forEach(b => b.onclick = () => { const e = find(b.dataset.cp), [lo, la] = e.coordenadas; copyText(`${e.nombre[lang]} — ${la.toFixed(6)}, ${lo.toFixed(6)}\nhttps://www.google.com/maps/search/?api=1&query=${la.toFixed(6)},${lo.toFixed(6)}`).then(() => toast(L.copiedLoc, 1800)); });
+    lb.querySelectorAll('[data-rep]').forEach(b => b.onclick = () => { const box = b.closest('.mlp-evbody').querySelector('.mlp-repbox'); box.innerHTML = L.reasons.map((r, i) => `<button class="mlp-btn" data-r="${i}">${esc(r)}</button>`).join(''); box.querySelectorAll('[data-r]').forEach(x => x.onclick = () => { const sub = store.get(SUB_KEY) || {}; logRemote({ accion: 'reporte', evento: b.dataset.rep.replace(/^c-/, ''), motivo: L.reasons[+x.dataset.r], email: sub.email || '', pagina: location.href.split('?')[0] }); box.innerHTML = `<small>${L.reportSent}</small>`; }); });
+    list.classList.add('open', 'wide'); scrim.classList.add('open');
+    if (focus) { const el = lb.querySelector(`[data-ev="${focus}"]`); if (el) setTimeout(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }), 250); }
+  }
+  // suscripción (correo verificado con código de 6 dígitos)
+  const SUB_KEY = 'mlp-sub-v1';
+  const subscribed = () => { const s2 = store.get(SUB_KEY); return s2 && s2.email && s2.token ? s2 : null; };
+  function renderGate(box, done) {
+    const L = UI[lang];
+    if (!apiUrl()) { box.innerHTML = `<div class="mlp-gate"><div class="mlp-gico">${SVGX.tkt}</div><b>${L.subTitle}</b><p>${L.subOff}</p></div>`; return; }
+    let email = '', nombre = '';
+    const step1 = () => {
+      box.innerHTML = `<form class="mlp-gate" novalidate><div class="mlp-gico">${SVGX.tkt}</div><b>${L.subTitle}</b><p>${L.subSub}</p>
+        <label>${L.email}<input type="email" name="e" autocomplete="email" required value="${esc(email)}" placeholder="tu@correo.com"></label>
+        <label>${L.nameOpt}<input name="n" autocomplete="given-name" value="${esc(nombre)}"></label>
+        <label class="mlp-gchk"><input type="checkbox" name="ok"> <span>${L.consent} <a href="${esc((DATA.config && DATA.config.privacidadUrl) || 'privacidad.html')}" target="_blank" rel="noopener">${L.privacy}</a></span></label>
+        <div class="mlp-gerr"></div><button class="mlp-btn primary" type="submit">${L.sendCode}</button></form>`;
+      const f = box.querySelector('form'), err = f.querySelector('.mlp-gerr');
+      f.onsubmit = ev => { ev.preventDefault(); email = f.e.value.trim().toLowerCase(); nombre = f.n.value.trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { err.textContent = L.badEmail; return; }
+        if (!f.ok.checked) { err.textContent = L.needConsent; return; }
+        const bt = f.querySelector('button'); bt.disabled = true; bt.textContent = L.sending; err.textContent = '';
+        api({ accion: 'codigo', email, idioma: lang }).then(j => { if (j.ok) step2(); else { err.textContent = j.error === 'limite' ? L.tooMany : L.netErr; bt.disabled = false; bt.textContent = L.sendCode; } }).catch(() => { err.textContent = L.netErr; bt.disabled = false; bt.textContent = L.sendCode; }); };
+    };
+    const step2 = () => {
+      box.innerHTML = `<form class="mlp-gate" novalidate><div class="mlp-gico">✉</div><p>${L.codeSent.replace('{e}', '<b>' + esc(email) + '</b>')}</p>
+        <label>${L.code}<input name="c" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" class="mlp-gcode" required></label>
+        <div class="mlp-gerr"></div><button class="mlp-btn primary" type="submit">${L.verify}</button>
+        <div class="mlp-glinks"><button type="button" data-g="re">${L.resend}</button><button type="button" data-g="ch">${L.changeEmail}</button></div></form>`;
+      const f = box.querySelector('form'), err = f.querySelector('.mlp-gerr'); f.c.focus();
+      f.querySelector('[data-g="ch"]').onclick = step1;
+      f.querySelector('[data-g="re"]').onclick = () => api({ accion: 'codigo', email, idioma: lang }).then(j => { err.textContent = j.ok ? '✓' : (j.error === 'limite' ? L.tooMany : L.netErr); }).catch(() => { err.textContent = L.netErr; });
+      f.onsubmit = ev => { ev.preventDefault(); const c = f.c.value.replace(/\D/g, ''); if (c.length !== 6) { err.textContent = L.badCode; return; }
+        const bt = f.querySelector('button[type=submit]'); bt.disabled = true; err.textContent = '';
+        api({ accion: 'verificar', email, codigo: c, nombre, idioma: lang, origen: 'cupones' }).then(j => { if (j.ok && j.token) { store.set(SUB_KEY, { email, token: j.token, nombre, fecha: new Date().toISOString() }); toast(L.subOk, 2200); done(); } else { err.textContent = j.error === 'intentos' ? L.tooMany : L.badCode; bt.disabled = false; } }).catch(() => { err.textContent = L.netErr; bt.disabled = false; }); };
+    };
+    step1();
+  }
+  function openCoupons(focus) {
+    if (!DATA) return;
+    const L = UI[lang]; list._near = true;
+    $('.mlp-lh b').textContent = L.coupons;
+    list.classList.add('open', 'wide'); scrim.classList.add('open');
+    const lb = $('.mlp-lb'), sub = subscribed();
+    if (!sub) { renderGate(lb, () => openCoupons(focus)); return; }
+    const coups = (DATA.cupones || []).filter(couponValid);
+    lb.innerHTML = `<div class="mlp-subbar"><span>✓ ${esc(L.subAs.replace('{e}', sub.email))}</span><button data-out="1">${L.logout}</button></div><p class="mlp-chint">${L.coupHint}</p><div class="mlp-coups">${coups.map(c => couponHTML(c, true)).join('')}</div><div class="mlp-cdetail"></div>`;
+    lb.querySelector('[data-out]').onclick = () => { try { localStorage.removeItem(SUB_KEY); } catch (e) {} openCoupons(); };
+    lb.querySelectorAll('.mlp-coups .mlp-coupon').forEach(el => el.onclick = () => showCoupon(el.dataset.c));
+    if (focus) showCoupon(focus);
   }
   // cupones
   const COUP_KEY = 'mlp-cupones-v1';
@@ -553,19 +629,23 @@ function init(root) {
   function couponValid(c) { return daysTo(c.vence) >= 0; }
   function couponHTML(c, compact) {
     const L = UI[lang], biz = byId[c.negocio], mine = (store.get(COUP_KEY) || {})[c.id];
-    return `<div class="mlp-coupon${compact ? ' compact' : ''}${couponValid(c) ? '' : ' expired'}" data-c="${esc(c.id)}" style="--cc:${esc(c.color || '#c0553a')}">
-      <div class="mlp-cmain"><span class="mlp-ctype">${esc((L.couponTypes || {})[c.tipo] || c.tipo)}</span>${c.ejemplo ? `<span class="mlp-cex">${L.example}</span>` : ''}
-        <b class="mlp-ctitle">${esc(c.titulo[lang])}</b><span class="mlp-cbiz">${esc(biz ? biz.nombre[lang] : (c.negocio_nombre || ''))}</span>
-        ${compact ? '' : `<p class="mlp-cterms">${esc(c.condiciones ? c.condiciones[lang] : '')}</p>`}</div>
-      <div class="mlp-cstub"><small>${L.until}</small><b>${esc(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }))}</b>${mine ? `<code>${esc(mine.codigo)}</code>` : '<i>✂</i>'}</div>
-      ${biz && biz.logo ? `<img class="mlp-clogo" src="${esc(biz.logo)}" alt="">` : '<span class="mlp-cstamp">LA PAZ · BCS</span>'}</div>`;
+    return `<div class="mlp-coupon${compact ? ' compact' : ''}${couponValid(c) ? '' : ' expired'}" data-c="${esc(c.id)}" style="--cc:${esc(c.color || '#D7263D')}">
+      <span class="mlp-chole"></span>
+      <div class="mlp-cpanel"><small class="mlp-cplace">La Paz · Baja California Sur</small>
+        <span class="mlp-ctype">${esc((L.couponTypes || {})[c.tipo] || c.tipo)}</span>${c.ejemplo ? `<span class="mlp-cex">${L.example}</span>` : ''}
+        <b class="mlp-ctitle">${esc(c.titulo[lang])}</b>
+        <span class="mlp-cbiz">${esc(biz ? biz.nombre[lang] : (c.negocio_nombre || ''))} · ${L.until.toLowerCase()} ${esc(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }))}</span>
+        ${compact ? '' : `<p class="mlp-cterms">${esc(c.condiciones ? c.condiciones[lang] : '')}</p>`}
+        ${mine ? `<code class="mlp-cmine">${esc(mine.codigo)}</code>` : ''}</div>
+      <div class="mlp-cseal${biz && biz.logo ? ' has-logo' : ''}">${biz && biz.logo ? `<img src="${esc(biz.logo)}" alt="">` : '<b>LA PAZ</b><small>BCS</small>'}</div></div>`;
   }
   function downloadCoupon(c) {
     const L = UI[lang], all = store.get(COUP_KEY) || {};
     let mine = all[c.id], fresh = false;
     if (!mine) { mine = { codigo: `${c.prefijo || 'LPZ'}-${rnd(4)}-${rnd(2)}`, fecha: new Date().toISOString() }; all[c.id] = mine; store.set(COUP_KEY, all); fresh = true; }
     drawCouponPNG(c, mine.codigo);
-    if (fresh) logRemote({ tipo: 'cupon', cupon: c.id, titulo: c.titulo.es, negocio: c.negocio, codigo: mine.codigo, vence: c.vence, perfil: chosen.join(','), idioma: lang, fecha: mine.fecha, pagina: location.href.split('?')[0] });
+    const sub = subscribed() || {};
+    if (fresh) logRemote({ tipo: 'cupon', email: sub.email || '', token: sub.token || '', cupon: c.id, titulo: c.titulo.es, negocio: c.negocio, codigo: mine.codigo, vence: c.vence, perfil: chosen.join(','), idioma: lang, fecha: mine.fecha, pagina: location.href.split('?')[0] });
     toast(fresh ? L.saved : L.already, 2600);
     return mine.codigo;
   }
@@ -573,31 +653,41 @@ function init(root) {
     const u = DATA && DATA.config && DATA.config.registroUrl; if (!u) return Promise.resolve(false);
     return fetch(u, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(obj) }).then(() => true).catch(() => false);
   }
+  function loadCouponFonts() {
+    if (!document.getElementById('mlp-cfonts')) { const l = document.createElement('link'); l.id = 'mlp-cfonts'; l.rel = 'stylesheet'; l.href = 'https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rye&display=swap'; document.head.appendChild(l); }
+    return document.fonts && document.fonts.load ? Promise.all(['40px "Alfa Slab One"', '20px Rye'].map(f => document.fonts.load(f))).catch(() => {}) : Promise.resolve();
+  }
   function drawCouponPNG(c, code) {
     const lb = byId[c.negocio];
+    if (!c._fonts) { c._fonts = 1; Promise.race([loadCouponFonts(), new Promise(r => setTimeout(r, 1500))]).then(() => drawCouponPNG(c, code)); return; }
     if (lb && lb.logo && c._logo === undefined) { const im = new Image(); im.onload = () => { c._logo = im; drawCouponPNG(c, code); }; im.onerror = () => { c._logo = null; drawCouponPNG(c, code); }; im.src = lb.logo; return; }
     const W = 1200, H = 560, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const g = cv.getContext('2d');
-    const col = c.color || '#c0553a', biz = byId[c.negocio], L = UI[lang];
-    g.fillStyle = '#f4e7c9'; g.fillRect(0, 0, W, H);
-    for (let i = 0; i < 2600; i++) { g.fillStyle = `rgba(120,90,50,${Math.random() * .06})`; g.fillRect(Math.random() * W, Math.random() * H, 2, 2); }
-    g.strokeStyle = 'rgba(110,80,50,.12)'; g.lineWidth = 1; for (let k = -H; k < W; k += 9) { g.beginPath(); g.moveTo(k, 0); g.lineTo(k + H * .7, H); g.stroke(); }
-    g.strokeStyle = col; g.lineWidth = 6; g.setLineDash([]); g.strokeRect(24, 24, W - 48, H - 48);
-    g.lineWidth = 2; g.setLineDash([10, 8]); g.strokeRect(40, 40, W - 80, H - 80); g.setLineDash([]);
-    g.strokeStyle = '#5b5048'; g.setLineDash([4, 10]); g.beginPath(); g.moveTo(860, 40); g.lineTo(860, H - 40); g.stroke(); g.setLineDash([]);
-    g.fillStyle = col; g.font = '700 26px Nunito, sans-serif'; g.fillText(((L.couponTypes || {})[c.tipo] || c.tipo).toUpperCase(), 80, 110);
-    g.fillStyle = '#3b3632'; g.font = '700 62px Kalam, Georgia, serif'; wrap(g, c.titulo[lang], 80, 190, 740, 68, 2);
-    g.font = '700 30px Nunito, sans-serif'; g.fillStyle = '#5b5048'; g.fillText(biz ? biz.nombre[lang] : '', 80, 350);
-    g.font = '24px Nunito, sans-serif'; wrap(g, c.condiciones ? c.condiciones[lang] : '', 80, 400, 740, 30, 3);
-    g.fillStyle = '#5b5048'; g.font = '700 22px Nunito, sans-serif'; g.fillText(L.until.toUpperCase(), 895, 130);
-    g.fillStyle = '#3b3632'; g.font = '700 34px Nunito, sans-serif'; g.fillText(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }), 895, 175);
-    g.fillStyle = '#5b5048'; g.font = '700 22px Nunito, sans-serif'; g.fillText(L.yourCode.toUpperCase(), 895, 270);
-    g.fillStyle = col; g.font = '800 33px ui-monospace, Menlo, monospace'; g.fillText(code, 892, 318);
-    if (c._logo) { const im = c._logo, s2 = Math.min(190 / im.naturalWidth, 170 / im.naturalHeight); g.drawImage(im, 1010 - im.naturalWidth * s2 / 2, 445 - im.naturalHeight * s2 / 2, im.naturalWidth * s2, im.naturalHeight * s2); }
-    else { g.save(); g.translate(1010, 440); g.rotate(-.18); g.strokeStyle = col; g.globalAlpha = .7; g.lineWidth = 4; g.beginPath(); g.arc(0, 0, 70, 0, 7); g.stroke(); g.beginPath(); g.arc(0, 0, 58, 0, 7); g.stroke();
-    g.fillStyle = col; g.font = '800 22px Nunito, sans-serif'; g.textAlign = 'center'; g.fillText('LA PAZ', 0, -4); g.font = '700 16px Nunito, sans-serif'; g.font = '700 13px Nunito, sans-serif'; g.fillText('BAJA CALIFORNIA SUR', 0, 20); g.restore(); }
-    g.fillStyle = '#7d7266'; g.font = '18px Nunito, sans-serif'; g.fillText(location.host + location.pathname.replace(/index\.html$/, ''), 80, H - 62);
+    const col = c.color || '#D7263D', ink = '#111', cream = '#FFF6E0', L = UI[lang];
+    const SLAB = '"Alfa Slab One", Rockwell, Georgia, serif', WEST = 'Rye, Georgia, serif', SANS = 'Nunito, Arial, sans-serif';
+    const rr = (x, y, w, h, r) => { g.beginPath(); g.moveTo(x + r[0], y); g.lineTo(x + w - r[1], y); g.arcTo(x + w, y, x + w, y + r[1], r[1]); g.lineTo(x + w, y + h - r[2]); g.arcTo(x + w, y + h, x + w - r[2], y + h, r[2]); g.lineTo(x + r[3], y + h); g.arcTo(x, y + h, x, y + h - r[3], r[3]); g.lineTo(x, y + r[0]); g.arcTo(x, y, x + r[0], y, r[0]); g.closePath(); };
+    g.clearRect(0, 0, W, H);
+    rr(12, 12, W - 24, H - 24, [90, 18, 18, 90]); g.fillStyle = col; g.fill(); g.lineWidth = 10; g.strokeStyle = ink; g.stroke();
+    g.beginPath(); g.arc(78, H / 2, 24, 0, 7); g.fillStyle = cream; g.fill(); g.lineWidth = 8; g.stroke();
+    g.strokeStyle = ink; g.lineWidth = 5; g.beginPath(); g.moveTo(54, H / 2); g.bezierCurveTo(30, H / 2 - 60, 20, 60, 0, 40); g.stroke();
+    rr(140, 42, W - 182, H - 84, [10, 10, 10, 10]); g.fillStyle = cream; g.fill(); g.lineWidth = 7; g.stroke();
+    g.fillStyle = 'rgba(17,17,17,.07)'; for (let y = 60; y < H - 50; y += 14) for (let x = 160 + (y / 14 % 2) * 7; x < W - 60; x += 14) { g.beginPath(); g.arc(x, y, 1.6, 0, 7); g.fill(); }
+    g.fillStyle = col; g.font = `28px ${WEST}`; g.fillText('La Paz · Baja California Sur', 182, 102);
+    const tp = ((L.couponTypes || {})[c.tipo] || c.tipo).toUpperCase(); g.font = `800 22px ${SANS}`; const tw = g.measureText(tp).width + 28;
+    g.fillStyle = ink; g.fillRect(182, 124, tw, 38); g.fillStyle = '#FFC914'; g.fillText(tp, 196, 151);
+    g.fillStyle = ink; g.font = `62px ${SLAB}`; let yy = wrap(g, c.titulo[lang], 182, 226, 620, 68, 2);
+    g.font = `800 26px ${SANS}`; g.fillText(lb ? lb.nombre[lang] : '', 182, yy + 52);
+    g.font = `22px ${SANS}`; g.fillStyle = '#333'; yy = wrap(g, c.condiciones ? c.condiciones[lang] : '', 182, yy + 90, 620, 29, 2);
+    g.setLineDash([12, 9]); g.strokeStyle = ink; g.lineWidth = 3; g.strokeRect(182, 424, 420, 66); g.setLineDash([]);
+    g.fillStyle = col; g.font = `800 16px ${SANS}`; g.fillText(L.yourCode.toUpperCase(), 198, 446); g.fillStyle = ink; g.font = `800 31px ui-monospace, Menlo, monospace`; g.fillText(code, 198, 480);
+    g.fillStyle = ink; g.font = `800 16px ${SANS}`; g.fillText(L.until.toUpperCase(), 630, 446); g.font = `26px ${SLAB}`; g.fillText(fmtDate(c.vence, { day: 'numeric', month: 'short', year: 'numeric' }), 630, 480);
+    g.save(); g.translate(1010, 262); g.rotate(-.17);
+    g.beginPath(); g.arc(0, 0, 118, 0, 7); g.fillStyle = '#000'; g.fill(); g.lineWidth = 10; g.strokeStyle = '#2E86AB'; g.stroke(); g.beginPath(); g.arc(0, 0, 100, 0, 7); g.lineWidth = 3; g.strokeStyle = '#FFC914'; g.stroke();
+    if (c._logo) { const im = c._logo, s2 = Math.min(150 / im.naturalWidth, 140 / im.naturalHeight); g.drawImage(im, -im.naturalWidth * s2 / 2, -im.naturalHeight * s2 / 2, im.naturalWidth * s2, im.naturalHeight * s2); }
+    else { g.fillStyle = '#FFC914'; g.textAlign = 'center'; g.font = `40px ${WEST}`; g.fillText('LA PAZ', 0, 8); g.font = `20px ${WEST}`; g.fillText('B.C.S.', 0, 40); }
+    g.restore(); g.textAlign = 'left';
+    g.fillStyle = '#555'; g.font = `18px ${SANS}`; g.fillText(location.host + location.pathname.replace(/index\.html$/, ''), 820, 480);
     cv.toBlob(b => { if (!b) return; const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `cupon-${c.id}-${code}.png`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); }, 'image/png');
-    function wrap(g, txt, x, y, mw, lh, max) { const w = String(txt || '').split(' '); let line = '', n = 0; for (const t of w) { const test = line ? line + ' ' + t : t; if (g.measureText(test).width > mw && line) { g.fillText(line, x, y); y += lh; line = t; if (++n >= max - 1) { } } else line = test; } if (line) g.fillText(line, x, y); }
+    function wrap(g, txt, x, y, mw, lh, max) { const w = String(txt || '').split(' '); let line = '', n = 1; for (const t of w) { const test = line ? line + ' ' + t : t; if (g.measureText(test).width > mw && line) { if (n >= max) { line += '…'; break; } g.fillText(line, x, y); y += lh; line = t; n++; } else line = test; } if (line) g.fillText(line, x, y); return y; }
   }
   // banner de eventos (dibujo propio con los colores del carnaval)
   const BANNERS = {
@@ -615,7 +705,7 @@ function init(root) {
     const L = UI[lang]; list._near = true;
     $('.mlp-lh b').textContent = L.today;
     const now = new Date(), ss = sunset(now, LAPAZ[0], LAPAZ[1]);
-    const evs = upcoming(), coups = (DATA.cupones || []).filter(couponValid);
+    const evs = allEvents(), coups = (DATA.cupones || []).filter(couponValid);
     const aff = (DATA.afiliados || []).map(id => byId[id]).filter(Boolean).slice(0, 6);
     const slots = aff.map(p => `<button class="mlp-aff" data-id="${esc(p.id)}" style="--c:var(--${p.categoria})"><span class="mlp-ic${p.logo ? ' has-logo' : ''}">${mark(p)}</span><b>${esc(p.nombre[lang])}</b><small>★ ${L.rec}</small></button>`);
     while (slots.length < 6) slots.push(`<a class="mlp-aff mlp-affempty" href="${esc((DATA.config && DATA.config.afiliadosUrl) || 'afiliados.html')}"><span class="mlp-ic">+</span><b>${L.yourBiz}</b><small>${L.yourBizSub}</small></a>`);
@@ -624,16 +714,14 @@ function init(root) {
         <div><b>${fmtTime(now)}</b><small>${(t => t.charAt(0).toUpperCase() + t.slice(1))(new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-MX', { timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long' }).format(now))}</small></div>
         <div><b>🌅 ${fmtTime(ss)}</b><small>${L.sunset}</small></div></div>
       ${WX ? `<small class="mlp-attr">${L.weatherBy} (CC BY 4.0)</small>` : ''}
-      ${evs.length ? `<h4 style="--c:#d6317a"><i></i>${L.events}</h4>` + evs.map(e => `<div class="mlp-ev" data-ev="${esc(e.id)}">${BANNERS[e.banner] ? BANNERS[e.banner](e) : ''}<div class="mlp-evbody"><span class="mlp-evbadge">${eventBadge(e)}</span><b>${esc(e.nombre[lang])}</b><small>${esc(fmtRange(e.inicio, e.fin))} · ${esc(e.lugar ? e.lugar[lang] : '')}</small><p>${esc(e.descripcion ? e.descripcion[lang] : '')}</p><div class="mlp-actions">${e.coordenadas ? `<button class="mlp-btn" data-goev="${esc(e.id)}">📍 ${L.open}</button>` : ''}${e.enlace ? `<a class="mlp-btn" href="${esc(e.enlace)}" target="_blank" rel="noopener">${L.moreInfo} ↗</a>` : ''}</div></div></div>`).join('') : ''}
-      ${coups.length ? `<h4 style="--c:#cf862c"><i></i>${L.coupons}</h4><div class="mlp-coups">${coups.map(c => couponHTML(c, true)).join('')}</div><div class="mlp-cdetail"></div>` : ''}
+      <div class="mlp-tlinks"><button class="mlp-btn" data-x="ev">${SVGX.cal} ${evs.length === 1 ? L.evOne : evs.length ? L.evUpcoming.replace('{n}', evs.length) : L.events}</button>${coups.length ? `<button class="mlp-btn" data-x="cp">${SVGX.tkt} ${L.coupons} (${coups.length})</button>` : ''}</div>
       <h4 style="--c:#e2b23a"><i></i>${L.partners}</h4><div class="mlp-affs">${slots.join('')}</div></div>`;
     const lb = $('.mlp-lb');
-    lb.querySelectorAll('.mlp-coups .mlp-coupon').forEach(el => el.onclick = () => showCoupon(el.dataset.c));
-    lb.querySelectorAll('[data-goev]').forEach(b => b.onclick = () => { const e = (DATA.eventos || []).find(x => x.id === b.dataset.goev); closeList(); map.flyTo({ center: e.coordenadas, zoom: 15.5, essential: true }); });
+    lb.querySelectorAll('.mlp-tlinks [data-x]').forEach(b => b.onclick = () => b.dataset.x === 'ev' ? openEvents() : openCoupons());
     lb.querySelectorAll('.mlp-aff[data-id]').forEach(b => b.onclick = () => { closeList(); openCard(b.dataset.id, null, true); });
     list.classList.add('open'); scrim.classList.add('open'); list.classList.add('wide');
-    if (focus && focus.startsWith('ev:')) { const el = lb.querySelector(`[data-ev="${focus.slice(3)}"]`); if (el) setTimeout(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }), 300); }
-    if (focus && focus.startsWith('c:')) showCoupon(focus.slice(2));
+    if (focus && focus.startsWith('ev:')) openEvents(focus.slice(3));
+    if (focus && focus.startsWith('c:')) openCoupons(focus.slice(2));
   }
   function showCoupon(id) {
     const L = UI[lang], c = (DATA.cupones || []).find(x => x.id === id), box = $('.mlp-cdetail'); if (!c || !box) return;

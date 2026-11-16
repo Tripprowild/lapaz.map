@@ -1,5 +1,5 @@
 {
- "version": 4,
+ "version": 5,
  "nota": "Coordenadas en [longitud, latitud]. 'verificar': true = ubicación aproximada (corrígela con el modo ajuste: agrega ?ajustar a la dirección). 'nivel': basico (pin + descripción breve) | destacado (descripción amplia, horario, contacto, hasta 4 fotos, se sugiere 'cerca de ti') | sobresaliente (todo lo anterior + sello Recomendado, redes sociales, enlaces, botón de reservar y hasta 12 fotos). 'referencias' liga lugares entre sí por su id. 'ejemplo': true marca fichas de muestra que deben reemplazarse por negocios reales.",
  "categorias": {
   "historia": {
@@ -1458,7 +1458,10 @@
  "config": {
   "registroUrl": "",
   "afiliadosUrl": "afiliados.html",
-  "clima": "https://raw.githubusercontent.com/Tripprowild/lapaz.map/clima/clima.json"
+  "clima": "https://raw.githubusercontent.com/Tripprowild/lapaz.map/clima/clima.json",
+  "eventosUrl": "eventos.html",
+  "privacidadUrl": "privacidad.html",
+  "turnstileSiteKey": ""
  },
  "afiliados": [
   "thehook"
@@ -1500,7 +1503,7 @@
    "negocio": "thehook",
    "tipo": "descuento",
    "prefijo": "HOOK",
-   "color": "#2c6e8a",
+   "color": "#D7263D",
    "vence": "2026-12-31",
    "titulo": {
     "es": "10% de descuento en toda la tienda",

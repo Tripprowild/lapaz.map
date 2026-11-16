@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proponer un evento · Mapa de La Paz, BCS</title>
+<meta name="description" content="Propón un evento para el mapa turístico de La Paz, Baja California Sur. Todos los eventos se revisan antes de publicarse.">
+<link rel="stylesheet" href="assets/vendor/maplibre-gl.css">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700;800&family=Alfa+Slab+One&family=Rye&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3b3632;--paper:#fbf6ea;--line:#5b5048;--red:#D7263D;--navy:#1f2a44}
+*{box-sizing:border-box}
+body{margin:0;font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:#efe3c4;background-image:repeating-linear-gradient(-55deg,rgba(90,70,50,.09) 0 1px,transparent 1px 5px);line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:20px 14px 60px}
+.top a{display:inline-block;color:var(--ink);font-weight:800;text-decoration:none;border:2px solid var(--line);background:var(--paper);border-radius:12px;padding:6px 12px}
+h1{font:400 32px/1.1 "Alfa Slab One",Georgia,serif;color:var(--red);margin:14px 0 6px}
+.lead{font-size:16px;margin:0 0 16px}
+.card{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}
+.card h2{font:400 20px "Alfa Slab One",Georgia,serif;margin:0 0 10px}
+.rules{margin:0;padding-left:20px;font-size:14px}
+.rules li{margin:3px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:800;font-size:13.5px}
+label small{font-weight:600;opacity:.7}
+input,select,textarea{width:100%;font:600 15px Nunito,sans-serif;padding:9px 11px;border:2px solid #8a8172;border-radius:10px;background:#fffdf7;color:var(--ink);margin-top:4px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red)}
+textarea{min-height:110px;resize:vertical}
+.count{font-size:12px;opacity:.7;text-align:right}
+.check{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:14px;margin:6px 0}
+.check input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--red)}
+#pick{height:260px;border-radius:12px;border:2px solid #8a8172;margin-top:6px;overflow:hidden}
+.hint{font-size:12.5px;opacity:.75;margin-top:4px}
+.btn{font:800 16px Nunito,sans-serif;border:2.5px solid #111;background:var(--red);color:#fff6e0;border-radius:12px;padding:11px 20px;cursor:pointer}
+.btn.ghost{background:var(--paper);color:var(--ink)}
+.btn[disabled]{opacity:.6}
+.err{color:#a32d2d;font-weight:800;font-size:13.5px;min-height:1em;margin-top:6px}
+.code{font:800 26px ui-monospace,Menlo,monospace;letter-spacing:10px;text-align:center}
+.links{display:flex;justify-content:space-between;margin-top:8px}
+.links button{border:0;background:none;font:800 13px Nunito,sans-serif;color:var(--navy);text-decoration:underline;cursor:pointer}
+.ok{display:none;text-align:center}
+.ok b{font:400 26px "Alfa Slab One",Georgia,serif;color:var(--red);display:block}
+.badge{display:inline-block;background:#eaf3de;border:1.5px solid #3b6d11;color:#27500a;border-radius:10px;padding:5px 10px;font-weight:800;font-size:13px;margin-bottom:12px}
+.hp{position:absolute;left:-5000px}
+[hidden]{display:none!important}
+@media (max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="top"><a href="./">← Volver al mapa</a></div>
+ <h1>Propón un evento</h1>
+ <p class="lead">Comparte un evento en La Paz con quienes visitan el mapa. Lo revisamos antes de publicarlo; aparecerá en la lista de <b>Eventos</b> con la etiqueta <b>Comunitario</b>.</p>
+
+ <div class="card">
+  <h2>Requisitos</h2>
+  <ul class="rules">
+   <li>Verificar tu correo con un código de 6 dígitos.</li>
+   <li>Ser el organizador o contar con su autorización.</li>
+   <li>Evento dentro del municipio de La Paz, con fecha en los próximos 6 meses (máximo 30 días de duración).</li>
+   <li>Si es en vía o espacio público, contar con el permiso del Ayuntamiento.</li>
+   <li>Datos de contacto reales (tu teléfono no se publica).</li>
+   <li>No se publica: actividades ilegales, armas, contenido para adultos, discriminación, venta de alcohol a menores, esquemas de inversión o pirámide, ni cobros por canales no oficiales.</li>
+   <li>Máximo 3 eventos en revisión por persona. Podemos rechazar o retirar cualquier evento.</li>
+  </ul>
+ </div>
+
+ <!-- Paso 1: verificar correo -->
+ <div class="card" id="v1" hidden>
+  <h2>1. Verifica tu correo</h2>
+  <form id="fv1" novalidate>
+   <label>Correo electrónico<input type="email" name="e" autocomplete="email" required placeholder="tu@correo.com"></label>
+   <label class="check"><input type="checkbox" name="ok"> <span>Acepto el <a href="privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a>.</span></label>
+   <div class="err" id="e1"></div>
+   <button class="btn" type="submit">Enviar código</button>
+  </form>
+ </div>
+ <div class="card" id="v2" hidden>
+  <h2>Escribe el código</h2>
+  <form id="fv2" novalidate>
+   <p id="sentTo" class="hint"></p>
+   <label>Código de 6 dígitos<input name="c" class="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required></label>
+   <div class="err" id="e2"></div>
+   <button class="btn" type="submit">Verificar</button>
+   <div class="links"><button type="button" id="re">Reenviar código</button><button type="button" id="ch">Cambiar correo</button></div>
+  </form>
+ </div>
+ <div class="card" id="off" hidden><h2>Muy pronto</h2><p>El envío de eventos estará disponible en cuanto conectemos el registro. Vuelve pronto.</p></div>
+
+ <!-- Paso 2: datos del evento -->
+ <form id="f" novalidate hidden>
+  <input class="hp" type="text" name="website2" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div class="badge" id="who"></div>
+  <div class="card">
+   <h2>2. El evento</h2>
+   <div class="grid">
+    <label class="full">Nombre del evento *<input name="nombre" required maxlength="90"></label>
+    <label>Categoría *<select name="categoria" required><option value="">Elige…</option><option>Música y conciertos</option><option>Cultura y arte</option><option>Gastronomía</option><option>Deporte y aventura</option><option>Naturaleza y fauna</option><option>Familia y niños</option><option>Feria o mercado</option><option>Fiesta tradicional</option><option>Taller o curso</option><option>Otro</option></select></label>
+    <label>Horario<input name="hora" maxlength="40" placeholder="19:00 – 23:00"></label>
+    <label>Fecha de inicio *<input name="inicio" type="date" required></label>
+    <label>Fecha de fin <small>(si dura varios días)</small><input name="fin" type="date"></label>
+    <label>Lugar *<input name="lugar" required maxlength="90" placeholder="Malecón, frente al Kiosco"></label>
+    <label>Dirección<input name="direccion" maxlength="160"></label>
+    <div class="full"><label>Ubicación en el mapa * <small>toca el mapa para poner el pin</small></label><div id="pick"></div><div class="hint" id="coordsTxt">Aún no marcas la ubicación.</div></div>
+    <label class="full">Descripción * <small>(50 a 600 caracteres)</small><textarea name="descripcion" required minlength="50" maxlength="600"></textarea><div class="count" id="cnt">0 / 600</div></label>
+    <label>Precio <small>(o “Gratis”)</small><input name="precio" maxlength="40" placeholder="Gratis · $200 MXN"></label>
+    <label>Enlace oficial o red social<input name="enlace" type="url" placeholder="https://"></label>
+   </div>
+  </div>
+  <div class="card">
+   <h2>3. Organizador</h2>
+   <div class="grid">
+    <label>Nombre u organización *<input name="organizador" required maxlength="80"></label>
+    <label>Teléfono o WhatsApp * <small>(no se publica)</small><input name="telefono" type="tel" required maxlength="30"></label>
+   </div>
+   <label class="check"><input type="checkbox" name="decl_organizador"> Soy el organizador o tengo su autorización para publicar este evento. *</label>
+   <label class="check"><input type="checkbox" name="decl_permiso"> Si el evento es en vía o espacio público, cuenta con el permiso del Ayuntamiento. *</label>
+   <label class="check"><input type="checkbox" name="decl_reglas"> Acepto los requisitos y que el evento se revise antes de publicarse y pueda retirarse. *</label>
+   <div id="ts"></div>
+   <div class="err" id="ef"></div>
+   <button class="btn" id="send" type="submit">Enviar para revisión</button>
+  </div>
+ </form>
+ <div class="card ok" id="ok"><b>¡Gracias!</b><p>Recibimos tu evento. Lo revisaremos y, si cumple los requisitos, aparecerá en la lista de Eventos del mapa.</p><p><a href="./">Volver al mapa</a> · <a href="eventos.html">Proponer otro</a></p></div>
+</div>
+<script src="assets/vendor/maplibre-gl.js"></script>
+<script>
+(function () {
+  var KEY = 'mlp-sub-v1', CFG = {}, pin = null, mk = null, email = '', $ = function (id) { return document.getElementById(id); };
+  var ERR = { verificacion: 'Tu verificación venció. Verifica tu correo otra vez.', captcha: 'Completa la verificación anti-robots.', faltan: 'Faltan campos obligatorios.', fecha: 'Revisa las fechas: deben ser futuras, dentro de los próximos 6 meses y de máximo 30 días.', descripcion: 'La descripción debe tener entre 50 y 600 caracteres.', ubicacion: 'La ubicación debe estar dentro del municipio de La Paz.', enlace: 'El enlace debe empezar con https://', declaraciones: 'Marca las tres casillas de confirmación.', pendientes: 'Ya tienes 3 eventos en revisión. Espera a que los revisemos.' };
+  function sub() { try { var s = JSON.parse(localStorage.getItem(KEY)); return s && s.email && s.token ? s : null; } catch (e) { return null; } }
+  function api(o) { return fetch(CFG.registroUrl, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(o) }).then(function (r) { return r.json(); }); }
+  function show(id) { ['v1', 'v2', 'off', 'f', 'ok'].forEach(function (k) { $(k).hidden = k !== id; }); if (id === 'f') initForm(); }
+  fetch('datos/lugares.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (d) { CFG = d.config || {}; start(); }).catch(start);
+  function start() { if (!CFG.registroUrl) return show('off'); var s = sub(); if (s) { email = s.email; show('f'); } else show('v1'); }
+
+  $('fv1').onsubmit = function (ev) {
+    ev.preventDefault(); var f = ev.target; email = f.e.value.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return $('e1').textContent = 'Escribe un correo válido.';
+    if (!f.ok.checked) return $('e1').textContent = 'Acepta el aviso de privacidad para continuar.';
+    var b = f.querySelector('button'); b.disabled = true; $('e1').textContent = '';
+    api({ accion: 'codigo', email: email, idioma: 'es' }).then(function (j) { b.disabled = false; if (j.ok) { $('sentTo').innerHTML = 'Enviamos un código a <b></b>. Revisa también spam.'; $('sentTo').querySelector('b').textContent = email; show('v2'); } else $('e1').textContent = j.error === 'limite' ? 'Demasiados intentos. Espera unos minutos.' : 'No se pudo enviar. Inténtalo de nuevo.'; })
+      .catch(function () { b.disabled = false; $('e1').textContent = 'No se pudo conectar. Inténtalo de nuevo.'; });
+  };
+  $('ch').onclick = function () { show('v1'); };
+  $('re').onclick = function () { api({ accion: 'codigo', email: email, idioma: 'es' }).then(function (j) { $('e2').textContent = j.ok ? 'Código reenviado.' : 'Espera unos minutos.'; }); };
+  $('fv2').onsubmit = function (ev) {
+    ev.preventDefault(); var c = ev.target.c.value.replace(/\D/g, ''); if (c.length !== 6) return $('e2').textContent = 'Escribe los 6 dígitos.';
+    api({ accion: 'verificar', email: email, codigo: c, idioma: 'es', origen: 'eventos' }).then(function (j) {
+      if (j.ok && j.token) { localStorage.setItem(KEY, JSON.stringify({ email: email, token: j.token, fecha: new Date().toISOString() })); show('f'); }
+      else $('e2').textContent = j.error === 'intentos' ? 'Demasiados intentos. Pide un código nuevo.' : 'Código incorrecto o vencido.';
+    }).catch(function () { $('e2').textContent = 'No se pudo conectar.'; });
+  };
+
+  var formReady = false;
+  function initForm() {
+    $('who').textContent = '✓ Verificado: ' + email;
+    if (formReady) return; formReady = true;
+    var hoy = new Date(Date.now() - 7 * 36e5).toISOString().slice(0, 10), max = new Date(Date.now() + 183 * 864e5).toISOString().slice(0, 10);
+    var f = $('f'); f.inicio.min = hoy; f.inicio.max = max; f.fin.min = hoy;
+    f.inicio.onchange = function () { f.fin.min = f.inicio.value; };
+    f.descripcion.oninput = function () { $('cnt').textContent = f.descripcion.value.trim().length + ' / 600'; };
+    var map = new maplibregl.Map({ container: 'pick', style: 'https://tiles.openfreemap.org/styles/liberty', center: [-110.312, 24.158], zoom: 13.2, attributionControl: { compact: true } });
+    map.on('click', function (e) { pin = [+e.lngLat.lng.toFixed(6), +e.lngLat.lat.toFixed(6)]; if (!mk) mk = new maplibregl.Marker({ color: '#D7263D' }).setLngLat(pin).addTo(map); else mk.setLngLat(pin); $('coordsTxt').textContent = 'Ubicación: ' + pin[1] + ', ' + pin[0]; });
+    if (CFG.turnstileSiteKey) { var s = document.createElement('script'); s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'; s.async = true; document.head.appendChild(s); $('ts').innerHTML = '<div class="cf-turnstile" data-sitekey="' + CFG.turnstileSiteKey + '" data-language="es"></div>'; }
+    f.onsubmit = function (ev) {
+      ev.preventDefault(); var err = $('ef'); err.textContent = '';
+      if (!f.checkValidity()) { err.textContent = 'Revisa los campos marcados con *.'; (f.querySelector(':invalid') || f).scrollIntoView({ block: 'center', behavior: 'smooth' }); return; }
+      if (!pin) { err.textContent = 'Marca la ubicación en el mapa.'; $('pick').scrollIntoView({ block: 'center', behavior: 'smooth' }); return; }
+      if (!(f.decl_organizador.checked && f.decl_permiso.checked && f.decl_reglas.checked)) { err.textContent = ERR.declaraciones; return; }
+      var s = sub() || {}, o = { accion: 'evento', email: s.email, token: s.token, lon: pin[0], lat: pin[1] };
+      ['website2', 'nombre', 'categoria', 'hora', 'inicio', 'fin', 'lugar', 'direccion', 'descripcion', 'precio', 'enlace', 'organizador', 'telefono'].forEach(function (k) { o[k] = (f[k].value || '').trim(); });
+      ['decl_organizador', 'decl_permiso', 'decl_reglas'].forEach(function (k) { o[k] = f[k].checked; });
+      var t = f.querySelector('[name="cf-turnstile-response"]'); if (t) o.turnstile = t.value;
+      var b = $('send'); b.disabled = true; b.textContent = 'Enviando…';
+      api(o).then(function (j) {
+        b.disabled = false; b.textContent = 'Enviar para revisión';
+        if (j.ok) { show('ok'); window.scrollTo(0, 0); return; }
+        if (j.error === 'verificacion') { localStorage.removeItem(KEY); show('v1'); }
+        err.textContent = ERR[j.error] || 'No se pudo enviar. Inténtalo de nuevo.';
+        if (window.turnstile) try { turnstile.reset(); } catch (e) {}
+      }).catch(function () { b.disabled = false; b.textContent = 'Enviar para revisión'; err.textContent = 'No se pudo conectar. Inténtalo de nuevo.'; });
+    };
+  }
+})();
+</script>
+</body>
+</html>
